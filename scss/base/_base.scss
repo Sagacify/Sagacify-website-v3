@@ -1,0 +1,41 @@
+/*
+
+20/04/2015 | J. Henrotte
+_base.scss
+Basic reset for the Sagaframework
+
+*/
+
+/* Border box code to manage sizes */
+
+*, :after, :before {
+    -moz-box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    word-wrap:break-word;
+}
+
+time{
+  font-family: $title-family;
+  @include font-size(12px);
+  font-style: italic;
+  color: $text-color;
+}
+
+hr{
+  border:0;
+  border-top:1px solid $border-color;
+  margin: 10px 0;
+}
+
+/* Selection color */
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: $black-color;
+}
+
+::selection {
+    color: white; 
+    background: $black-color;
+}
