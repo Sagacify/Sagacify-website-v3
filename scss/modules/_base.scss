@@ -1,0 +1,14 @@
+/*
+
+27/04/2015 | J. Henrotte
+_base.scss
+Basic for modules for the Sagaframework
+
+*/
+
+.wrapper{
+	width: 100%;
+	max-width: $screen-max-size;
+	padding: 0 10px;
+	margin: 0 auto;
+}

@@ -68,6 +68,12 @@ _placeholder.scss
 Placeholders for the Sagaframework
 
 */
+.blocks--blockquote:before, .blocks--blockquote:after {
+  content: '';
+  display: table; }
+.blocks--blockquote:after {
+  clear: both; }
+
 .navigation {
   position: absolute;
   top: 0;
@@ -158,12 +164,13 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  color: #1E2538; }
+  color: #1E2538;
+  line-height: 1.2; }
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -204,6 +211,9 @@ hr {
   border-top: 1px solid #EDEDED;
   margin: 10px 0; }
 
+strong {
+  color: #34E27E; }
+
 /* Selection color */
 ::-moz-selection {
   /* Code for Firefox */
@@ -214,13 +224,36 @@ hr {
   color: white;
   background: #34E27E; }
 
+a {
+  text-decoration: none; }
+
 /*
 
-20/04/2015 | J. Henrotte
+27/04/2015 | J. Henrotte
 _button.scss
-Grid for the articles element
+Buttons
 
 */
+.btn {
+  font-size: 12px;
+  font-size: 0.75rem;
+  -webkit-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+  background-color: #1E2538;
+  bottom: 0;
+  box-shadow: 2px 2px 0px 0px #34E27E;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 5px 20px;
+  position: absolute;
+  right: 30px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 /*
 
 24/02/2015 | J. Henrotte
@@ -274,6 +307,60 @@ Dev mode for the open know project
 SHOULD REMOVE FOR PRODUCTION
 
 */
+body:after {
+  content: 'base';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: red;
+  color: #fff;
+  font-size: 1rem; }
+  @media screen and (min-width: 30em) {
+    body:after {
+      content: "small: 30em"; } }
+  @media screen and (min-width: 44em) {
+    body:after {
+      content: "med: 44em"; } }
+  @media screen and (min-width: 62em) {
+    body:after {
+      content: "large: 62em"; } }
+  @media screen and (min-width: 82em) {
+    body:after {
+      content: "xlarge: 82em"; } }
+
+body {
+  padding-bottom: 5rem; }
+
+/*
+
+27/04/2015 | J. Henrotte
+_base.scss
+Basic for modules for the Sagaframework
+
+*/
+.wrapper {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+/*
+
+27/04/2015 | J. Henrotte
+_images.scss
+Image for the the Sagaframework
+
+*/
+.figure--extend {
+  width: 100%;
+  margin-bottom: 30px; }
+  .figure--extend--img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top; }
+
 /*
 
 20/04/2015 | J. Henrotte
@@ -399,5 +486,113 @@ Navigation
             font-size: 14px; }
             .navigation--list--element a:hover {
               color: #34E27E; } }
+
+/*
+
+20/04/2015 | J. Henrotte
+_blocks.scss
+Blocks
+
+*/
+.blocks--element {
+  background-color: white;
+  padding: 30px 30px 40px 30px;
+  margin-bottom: 30px;
+  position: relative; }
+  .blocks--element--title {
+    font-size: 36px;
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .blocks--element--text {
+    font-size: 15px;
+    font-size: 0.9375rem; }
+.blocks--image {
+  padding: 0; }
+  .blocks--image--figure img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top; }
+.blocks--blockquote--thequote {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #5F6882;
+  margin-bottom: 10px; }
+  .blocks--blockquote--thequote:before {
+    content: "'"; }
+  .blocks--blockquote--thequote:after {
+    content: "'"; }
+.blocks--blockquote--figure--figcaption {
+  font-size: 16px;
+  font-size: 1rem;
+  width: calc( 100% - 60px);
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px; }
+  .blocks--blockquote--figure--figcaption--name {
+    font-family: "Montserrat", sans-serif; }
+.blocks--blockquote--figure--img {
+  width: 100%;
+  max-width: 60px;
+  float: right;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; }
+.blocks--title {
+  padding: 30px 30px 20px 30px; }
+  .blocks--title .blocks--element--title {
+    font-weight: bold; }
+.blocks--small {
+  padding: 30px 10px;
+  text-align: center;
+  width: 100%; }
+  .blocks--small--text {
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    line-height: 1.2; }
+  .blocks--small--img {
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: top; }
+.blocks--weather {
+  background-color: #1E2538; }
+  .blocks--weather--temp {
+    font-size: 60px;
+    font-size: 3.75rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.25; }
+  .blocks--weather--city {
+    color: white; }
+.blocks--github {
+  background-color: #34E27E; }
+  .blocks--github--text {
+    color: white; }
+.blocks--blog .blocks--element--title {
+  font-size: 26px;
+  text-transform: none;
+  color: #54D1ED; }
+.blocks--blog .blocks--element--date,
+.blocks--blog .blocks--element--author {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  font-size: 1rem; }
+.blocks--blog .blocks--element--date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #5F6882;
+  margin-bottom: 10px; }
+.blocks--blog.blocks--blog--dark {
+  background-color: #383E4E; }
+  .blocks--blog.blocks--blog--dark .blocks--element--author, .blocks--blog.blocks--blog--dark .blocks--element--date, .blocks--blog.blocks--blog--dark .blocks--element--text {
+    color: white; }
 
 /*# sourceMappingURL=application.css.map */

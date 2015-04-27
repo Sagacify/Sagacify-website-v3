@@ -27,6 +27,9 @@ Importation of all scss files
 
 
 // Modules
+@import "modules/base";
+@import "modules/images";
 @import "modules/header";
 @import "modules/footer";
 @import "modules/navigation";
+@import "modules/blocks";

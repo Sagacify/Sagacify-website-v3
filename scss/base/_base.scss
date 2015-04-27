@@ -21,6 +21,10 @@ hr{
   margin: 10px 0;
 }
 
+strong{
+  color: $base-color;
+}
+
 /* Selection color */
 
 ::-moz-selection { /* Code for Firefox */
@@ -31,4 +35,8 @@ hr{
 ::selection {
     color: white; 
     background: $base-color;
+}
+
+a{
+  text-decoration: none;
 }

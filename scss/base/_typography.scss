@@ -12,13 +12,14 @@ body{
 	font-family: $base-family;
 	font-size: 62.5%;
 	font-weight: $base-family-regular;
-	line-height: 1.4;
+	line-height: 1.5;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 h1,h2,h3,h4,h5,h6{
 	font-family: $title-family;
 	color: $title-color;
+	line-height: 1.2;
 }
 
 p{
