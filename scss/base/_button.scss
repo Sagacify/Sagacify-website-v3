@@ -1,7 +1,23 @@
 /*
 
-20/04/2015 | J. Henrotte
+27/04/2015 | J. Henrotte
 _button.scss
-Grid for the articles element
+Buttons
 
 */
+
+.btn{
+	@include font-size(12px);
+	@include translate(0, 50%);
+	background-color: $button-color;
+	bottom: 0;
+	box-shadow: 2px 2px 0px 0px #34E27E;
+	color: white;
+	font-family: $title-family;
+	font-weight: 600;
+	padding: 5px 20px;
+	position: absolute;
+	right: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
