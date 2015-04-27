@@ -15,13 +15,6 @@ Basic reset for the Sagaframework
     word-wrap:break-word;
 }
 
-time{
-  font-family: $title-family;
-  @include font-size(12px);
-  font-style: italic;
-  color: $text-color;
-}
-
 hr{
   border:0;
   border-top:1px solid $border-color;
@@ -32,10 +25,10 @@ hr{
 
 ::-moz-selection { /* Code for Firefox */
     color: white;
-    background: $black-color;
+    background: $base-color;
 }
 
 ::selection {
     color: white; 
-    background: $black-color;
+    background: $base-color;
 }

@@ -6,6 +6,7 @@ Importation of all scss files
 	-> Output css/application.css
 
 */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,700italic,400,300,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,7 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*
 
-17/02/2015 | J. Henrotte
+20/04/2015 | J. Henrotte
 _vars.scss
 Variables for the the Sagaframework
 
@@ -125,9 +126,9 @@ Mixins for the Sagaframework
 */
 /*
 
-17/02/2015 | J. Henrotte
+20/04/2015 | J. Henrotte
 _fonts.scss
-Fonts for the projet Open Know
+Fonts for the projet Sagaframework
 
 */
 /*
@@ -147,20 +148,20 @@ Typography for the Sagaframework
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "minion-pro-display";
+  font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   font-weight: 400;
   line-height: 1.4;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "jaf-facitweb";
-  color: #2C3A4E; }
+  font-family: "Montserrat", sans-serif;
+  color: #1E2538; }
 
 p {
-  font-family: "minion-pro-display";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #56636D; }
+  color: #5F6882; }
 
 em {
   color: #34CB60; }
@@ -191,27 +192,20 @@ Basic reset for the Sagaframework
   box-sizing: border-box;
   word-wrap: break-word; }
 
-time {
-  font-family: "jaf-facitweb";
-  font-size: 12px;
-  font-size: 0.75rem;
-  font-style: italic;
-  color: #56636D; }
-
 hr {
   border: 0;
-  border-top: 1px solid #D6D9DF;
+  border-top: 1px solid #EDEDED;
   margin: 10px 0; }
 
 /* Selection color */
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: #242C38; }
+  background: #34E27E; }
 
 ::selection {
   color: white;
-  background: #242C38; }
+  background: #34E27E; }
 
 /*
 
@@ -258,6 +252,16 @@ input:focus:-ms-input-placeholder {
 /*
 
 20/04/2015 | J. Henrotte
+_background.scss
+Variables for the the Sagaframework
+
+*/
+body {
+  background-color: #FAFAFA; }
+
+/*
+
+20/04/2015 | J. Henrotte
 _dev.scss
 Dev mode for the open know project
 SHOULD REMOVE FOR PRODUCTION
@@ -287,3 +291,17 @@ SHOULD REMOVE FOR PRODUCTION
         content: 'xlarge: 82em';
     }
 } */
+/*
+
+20/04/2015 | J. Henrotte
+_header.scss
+Variables for the the Sagaframework
+
+*/
+/*
+
+20/04/2015 | J. Henrotte
+_footer.scss
+Variables for the the Sagaframework
+
+*/

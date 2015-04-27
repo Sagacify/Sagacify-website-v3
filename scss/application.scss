@@ -19,6 +19,13 @@ Importation of all scss files
 @import "base/base";
 @import "base/button";
 @import "base/input";
+@import "base/background";
+
 
 // Dev
 @import "dev";
+
+
+// Modules
+@import "modules/header";
+@import "modules/footer";
