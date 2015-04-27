@@ -8,7 +8,7 @@ SHOULD REMOVE FOR PRODUCTION
 */
 
 
-/* body:after {
+body:after {
     content: 'base';
     position: fixed;
     bottom: 0;
@@ -31,4 +31,4 @@ SHOULD REMOVE FOR PRODUCTION
     @media screen and (min-width: $screen-xlarge) {
         content: 'xlarge: #{$screen-xlarge}';
     }
-} */
+}

@@ -6,14 +6,16 @@ Placeholders for the Sagaframework
 
 */
 
-%clearfix:before, 
-%clearfix:after {
-	content: ''; 
-	display: table; 
-}
+%clearfix{
+	&:before, 
+	&:after {
+		content: ''; 
+		display: table; 
+	}
 
-%clearfix:after {
-	clear: both; 
+	&:after {
+		clear: both; 
+	}
 }
 
 %full--size{
