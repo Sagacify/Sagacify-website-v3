@@ -68,6 +68,13 @@ _placeholder.scss
 Placeholders for the Sagaframework
 
 */
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
 /*
 
 20/04/2015 | J. Henrotte
@@ -267,29 +274,6 @@ Dev mode for the open know project
 SHOULD REMOVE FOR PRODUCTION
 
 */
-body:after {
-  content: 'base';
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background: red;
-  color: #fff;
-  font-size: 1rem; }
-  @media screen and (min-width: 30em) {
-    body:after {
-      content: "small: 30em"; } }
-  @media screen and (min-width: 44em) {
-    body:after {
-      content: "med: 44em"; } }
-  @media screen and (min-width: 62em) {
-    body:after {
-      content: "large: 62em"; } }
-  @media screen and (min-width: 82em) {
-    body:after {
-      content: "xlarge: 82em"; } }
-
 /*
 
 20/04/2015 | J. Henrotte
@@ -297,6 +281,52 @@ _header.scss
 Variables for the the Sagaframework
 
 */
+.header {
+  padding: 0 10px; }
+  @media only screen and (min-width: 44em) {
+    .header {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto; } }
+  .header--navbutton {
+    overflow: hidden; }
+    @media only screen and (min-width: 44em) {
+      .header--navbutton {
+        float: left; } }
+    .header--navbutton h1 {
+      padding: 20px 0;
+      float: left; }
+    .header--navbutton--rdicon {
+      background-color: #34E27E;
+      height: 40px;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      width: 40px;
+      z-index: 1; }
+      @media only screen and (min-width: 44em) {
+        .header--navbutton--rdicon {
+          display: none; } }
+      .header--navbutton--rdicon span {
+        background: white;
+        height: 3px;
+        left: 7px;
+        margin: 5px 0 0 0;
+        position: absolute;
+        top: 3px;
+        transition: transform 0.2s, opacity 0.1s ease-in;
+        width: 25px; }
+        .header--navbutton--rdicon span:nth-child(2) {
+          top: 13px; }
+        .header--navbutton--rdicon span:last-child {
+          top: 23px; }
+      .header--navbutton--rdicon.active span:first-child {
+        transform: rotate(45deg) translate(8px, 7px); }
+      .header--navbutton--rdicon.active span:nth-child(2) {
+        opacity: 0; }
+      .header--navbutton--rdicon.active span:last-child {
+        transform: rotate(-45deg) translate(6px, -7px); }
+
 /*
 
 20/04/2015 | J. Henrotte
@@ -311,5 +341,63 @@ _navigation.scss
 Navigation
 
 */
+.navigation {
+  transition: opacity 0.1s ease-in;
+  opacity: 0;
+  position: fixed;
+  background: rgba(36, 44, 56, 0.9); }
+  .navigation.active {
+    opacity: 1; }
+  @media only screen and (min-width: 44em) {
+    .navigation {
+      position: relative;
+      background: none;
+      opacity: 1;
+      display: block;
+      float: right;
+      padding: 20px; } }
+  .navigation--list {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0 20px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%); }
+    @media only screen and (min-width: 44em) {
+      .navigation--list {
+        position: relative;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 0; } }
+    .navigation--list--element {
+      padding-top: 20px; }
+      .navigation--list--element:last-child {
+        padding-right: 0; }
+      .navigation--list--element a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-size: 1.25rem;
+        font-family: "Montserrat", sans-serif;
+        display: inline-block; }
+        .navigation--list--element a.selected {
+          color: #34E27E; }
+      @media only screen and (min-width: 44em) {
+        .navigation--list--element {
+          display: inline-block;
+          padding: 10px 20px 0 0; }
+          .navigation--list--element a {
+            color: #1E2538;
+            text-decoration: none;
+            font-size: 14px; }
+            .navigation--list--element a:hover {
+              color: #34E27E; } }
 
 /*# sourceMappingURL=application.css.map */
