@@ -65,4 +65,76 @@ Blocks
 			}
 		}
 	}
+	&--title{
+		padding: 30px 30px 20px 30px;
+		.blocks--element--title{
+			font-weight: bold;
+		}	
+	}
+	&--small{
+		padding: 30px 10px;
+		text-align: center;
+		width: 100%;
+		&--text{
+			@include font-size(28px);
+			font-family: $title-family;
+			font-weight: bold;
+			line-height: 1.2;
+		}
+		&--img{
+			display: inline-block;
+			margin-bottom: 15px;
+			vertical-align: top;
+		}
+	}
+	&--weather{
+		background-color: $weather-color;
+		&--temp{
+			@include font-size(60px);
+			color: white;
+			font-family: $title-family;
+			line-height: 1.25;
+		}
+		&--city{
+			color: white;
+		}
+	}
+	&--github{
+		background-color: $base-color;
+		&--text{
+			color: white;
+		}
+	}
+	&--blog{
+		.blocks--element--title{
+			font-size: 26px;
+			text-transform: none;
+			color: $title-color-blue;
+		}
+		.blocks--element--text{
+			
+		}
+		.blocks--element--date,
+		.blocks--element--author{
+			font-family: $title-family;
+			display: inline-block;
+			width: 100%;
+			@include font-size(16px);
+		}
+		.blocks--element--date{
+			@include font-size(14px);
+			color: $text-color;
+			margin-bottom: 10px;
+		}
+		&.blocks--blog--dark{
+			background-color: $blog-dark-color;
+			.blocks--element{
+				&--author,
+				&--date,
+				&--text{
+					color: white;
+				}
+			}
+		}
+	}
 }

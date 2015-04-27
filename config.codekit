@@ -1190,6 +1190,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/dev\/infographic.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60119,
+		"inputAbbreviatedPath": "\/img\/dev\/infographic.jpg",
+		"outputAbbreviatedPath": "\/img\/dev\/infographic.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/favicons\/android-chrome-144x144.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1476,6 +1487,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/people\/stephanie-baeck.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 235931,
+		"inputAbbreviatedPath": "\/img\/people\/stephanie-baeck.jpg",
+		"outputAbbreviatedPath": "\/img\/people\/stephanie-baeck.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/people\/thomas-deleval.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9321,
+		"inputAbbreviatedPath": "\/img\/people\/thomas-deleval.jpg",
+		"outputAbbreviatedPath": "\/img\/people\/thomas-deleval.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/resources\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1505,6 +1538,17 @@
 		"initialSize": 11837,
 		"inputAbbreviatedPath": "\/img\/social\/twitter.png",
 		"outputAbbreviatedPath": "\/img\/social\/twitter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/team\/office.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 830609,
+		"inputAbbreviatedPath": "\/img\/team\/office.jpg",
+		"outputAbbreviatedPath": "\/img\/team\/office.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2017,6 +2061,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/modules\/_header.scss",
 		"outputAbbreviatedPath": "\/css\/_header.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/modules\/_images.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 1,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/modules\/_images.scss",
+		"outputAbbreviatedPath": "\/css\/_images.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
