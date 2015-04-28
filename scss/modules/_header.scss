@@ -12,6 +12,7 @@ Variables for the the Sagaframework
 		width: 100%;
 		max-width: $screen-max-size;
 		margin: 0 auto;
+		overflow: hidden;
 	}
 	&--navbutton {
 		overflow: hidden;
@@ -29,7 +30,7 @@ Variables for the the Sagaframework
 			right: 20px;
 			top: 20px;
 			width: 40px;
-			z-index: 1;
+			z-index: 20;
 			@include screen-medium {
 				display: none;
 			}

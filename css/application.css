@@ -374,7 +374,8 @@ Variables for the the Sagaframework
     .header {
       width: 100%;
       max-width: 1140px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      overflow: hidden; } }
   .header--navbutton {
     overflow: hidden; }
     @media only screen and (min-width: 44em) {
@@ -390,7 +391,7 @@ Variables for the the Sagaframework
       right: 20px;
       top: 20px;
       width: 40px;
-      z-index: 1; }
+      z-index: 20; }
       @media only screen and (min-width: 44em) {
         .header--navbutton--rdicon {
           display: none; } }
@@ -432,7 +433,8 @@ Navigation
   transition: opacity 0.1s ease-in;
   opacity: 0;
   position: fixed;
-  background: rgba(36, 44, 56, 0.9); }
+  background: rgba(36, 44, 56, 0.9);
+  z-index: 10; }
   .navigation.active {
     opacity: 1; }
   @media only screen and (min-width: 44em) {
