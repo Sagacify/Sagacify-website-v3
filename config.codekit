@@ -11,6 +11,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/blog-single.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/blog-single.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/blog.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1174,7 +1183,7 @@
 		},
 	"\/contact.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/contact.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -1189,6 +1198,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/dev\/blogpost-pic.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36326,
+		"inputAbbreviatedPath": "\/img\/dev\/blogpost-pic.jpg",
+		"outputAbbreviatedPath": "\/img\/dev\/blogpost-pic.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/dev\/infographic.jpg": {
 		"fileType": 16384,
@@ -1751,23 +1771,50 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
 		},
+	"\/kit\/blog-single.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/blog-single.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/kit\/blog-single.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/blog-single.kit",
+		"outputAbbreviatedPath": "\/kit\/blog-single.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/blog.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/blog.kit",
-		"outputAbbreviatedPath": "\/blog.html",
+		"outputAbbreviatedPath": "\/kit\/blog.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
+		},
+	"\/kit\/careers.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/careers.kit",
+		"outputAbbreviatedPath": "\/kit\/careers.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/contact.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/contact.kit",
-		"outputAbbreviatedPath": "\/contact.html",
+		"outputAbbreviatedPath": "\/kit\/contact.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/index.kit": {
 		"fileType": 2048,
@@ -1845,8 +1892,8 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/scss\/_dev.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -1861,8 +1908,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/application.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
@@ -1925,8 +1972,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/base\/_button.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -1941,8 +1988,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/base\/_fontIcons.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2053,8 +2100,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/base\/_vars.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2101,8 +2148,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/modules\/_blocks.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2116,9 +2163,25 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/scss\/modules\/_blog.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/modules\/_blog.scss",
+		"outputAbbreviatedPath": "\/css\/_blog.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/scss\/modules\/_footer.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2181,8 +2244,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/modules\/_navigation.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2279,7 +2342,7 @@
 	"iconImageName": "harddrive_yellow"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2888,8 +2951,8 @@
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 1,
-	"sassDebugStyle": 1,
+	"sassCreateSourceMap": 0,
+	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,

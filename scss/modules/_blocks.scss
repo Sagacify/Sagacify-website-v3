@@ -107,6 +107,26 @@ Blocks
 			color: white;
 		}
 	}
+	&--githubalt {
+		background: black;
+		color: white;
+		font-size: 32px;
+	}
+	&--twitter {
+		background: $twitter-color;
+		color: white;
+		font-size: 30px;
+	}
+	&--facebook {
+		background: $facebook-color;
+		color: white;
+		font-size: 30px;
+	}
+	&--linkedin {
+		background: $linkedin-color;
+		color: white;
+		font-size: 30px;
+	}
 	&--blog{
 		.blocks--element--title{
 			font-size: 26px;
@@ -138,5 +158,38 @@ Blocks
 				}
 			}
 		}
+	}
+	&--twitterfeed {
+		background: $base-color;
+		box-shadow: 2px 2px 0px 0px white;
+			&--text {
+				color: white;
+				@include font-size(22px);
+			}
+		a {
+			text-decoration: none;
+			color: white;
+			@include screen-medium {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		&--tags {
+			color: white;
+		}
+		&--twitteraccount {
+			display: inline-block;
+			padding-top: 100px;
+			color: white;
+			@include font-size(18px);
+				&--icon {
+					display: inline-block;
+					padding-right: 10px;
+				}
+		}
+	}
+	&--greenshadow {
+		box-shadow: 2px 2px 0px 0px #34E27E;
 	}
 }
