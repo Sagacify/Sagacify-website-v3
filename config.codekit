@@ -11,6 +11,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/blog-single.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/blog-single.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/blog.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1860,6 +1869,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
 		},
+	"\/kit\/careers.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/careers.kit",
+		"outputAbbreviatedPath": "\/kit\/careers.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/contact.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -1892,9 +1910,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/products.kit",
-		"outputAbbreviatedPath": "\/kit\/products.html",
+		"outputAbbreviatedPath": "\/products.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/kit\/services.kit": {
 		"fileType": 2048,
@@ -1916,7 +1934,7 @@
 		},
 	"\/products.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/products.html",
 		"outputAbbreviatedPath": "No Output Path",
