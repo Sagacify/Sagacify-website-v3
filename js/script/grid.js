@@ -1,8 +1,9 @@
+var collumns = 40;
 var widthDocument = document.querySelector(".header").offsetWidth;
-gutterSize = widthDocument / 40;
-window.onload = function() {
-	matrix();
-};
+var gutterSize = widthDocument / collumns;
+var percent = 100 / collumns;
+matrix();
+new WOW().init();
 
 function getHeight(argument) {
 	var heightCount = 0,
@@ -17,8 +18,8 @@ function matrix(){
 	//Move each .block--element on the good position and give good width
 	var elem = document.querySelectorAll('.blocks--element');
 	Array.prototype.forEach.call(elem, function(el, i){
-		el.style.left = el.dataset.left * gutterSize + "px";
-		el.style.width = el.dataset.width * gutterSize + "px";
+		el.style.left = el.dataset.left * percent + "%";
+		el.style.width = el.dataset.width * percent + "%";
 	});
 
 	//Get all .blocks
@@ -49,6 +50,4 @@ function matrix(){
 			heighetElementRight += el.offsetHeight;
 		});
 	});
-
-	new WOW().init();
 }

@@ -192,4 +192,11 @@ Blocks
 	&--greenshadow {
 		box-shadow: 2px 2px 0px 0px #34E27E;
 	}
+	&--map{
+		padding: 0;
+		iframe{
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
 }
