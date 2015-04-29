@@ -625,7 +625,8 @@ Blocks
 .blocks--greenshadow {
   box-shadow: 2px 2px 0px 0px #34E27E; }
 .blocks--map {
-  padding: 0; }
+  padding: 0;
+  height: 300px; }
   .blocks--map iframe {
     display: inline-block;
     vertical-align: top; }
