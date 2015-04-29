@@ -22,7 +22,7 @@
 		},
 	"\/blog.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/blog.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -1741,7 +1741,7 @@
 		},
 	"\/js\/min\/main-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/main-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/main-min-min.js",
@@ -1763,7 +1763,7 @@
 		},
 	"\/js\/script\/grid.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/script\/grid.js",
 		"outputAbbreviatedPath": "\/js\/script\/min\/grid-min.js",
@@ -1887,9 +1887,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/blog.kit",
-		"outputAbbreviatedPath": "\/blog.html",
+		"outputAbbreviatedPath": "\/kit\/blog.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/careers.kit": {
 		"fileType": 2048,
@@ -1908,6 +1908,15 @@
 		"outputAbbreviatedPath": "\/contact.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
+		},
+	"\/kit\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/index.kit": {
 		"fileType": 2048,
@@ -2083,8 +2092,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/base\/_button.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2259,8 +2268,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/modules\/_blocks.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2453,12 +2462,6 @@
 			"linkedFileAbbreviatedPath": "\/bower_components\/wow\/dist\/wow.js",
 			"position": 1,
 			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/script\/grid.js",
-			"position": 2,
-			"type": 0
 			}
 		]
 	},
@@ -2469,7 +2472,7 @@
 	"iconImageName": "harddrive_yellow"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -3089,7 +3092,7 @@
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
 	"markdownCriticStyle": 0,
-	"markdownEnableFootnotes": 0,
+	"markdownEnableFootnotes": 1,
 	"markdownEnableLabels": 1,
 	"markdownEnableSmartQuotes": 1,
 	"markdownEscapeLineBreaks": 0,
@@ -3107,8 +3110,8 @@
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 1,
-	"sassDebugStyle": 1,
+	"sassCreateSourceMap": 0,
+	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
