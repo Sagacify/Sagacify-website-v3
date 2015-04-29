@@ -1,0 +1,131 @@
+/*
+
+20/04/2015 | J. Henrotte
+_blog.scss
+Blog
+
+*/
+
+.blog-content {
+	overflow: hidden;
+	text-align: center;
+	&--article {
+		position: relative;
+		background: white;
+		text-align: left;
+		color: $text-color;
+		@include font-size(14px);
+		margin-bottom: 30px;
+		@include screen-medium {
+			
+			float:left;
+			margin-right: 2%;
+			width: 49%;
+			&:nth-child(2n+2){
+				margin-right: 0;
+				margin-top: 30px;
+			}
+		}
+		&--text {
+			padding: 25px 15px;
+		}
+		&--figure{
+			img{
+				width: 100%;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+	h4 {
+		@include font-size(36px);
+		margin-bottom: 15px;	
+	}
+}
+
+.blogsingle-content {
+	text-align: center;
+	&--article {
+			&--text {
+			background: white;
+			color: $text-color;
+			@include font-size(14px);
+			padding: 25px 15px;
+			margin: 25px 0;
+			h4 {
+				text-align: left;
+				@include font-size(36px);
+				margin-bottom: 15px;	
+			}
+			p {
+				text-align: left;
+				margin-bottom: 15px;
+			}
+			a {
+				text-decoration: none;
+				color: $base-color;
+				@include screen-medium {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			img {
+				max-width: 100%;
+				padding: 25px 0; 
+			}
+			strong {
+				font-weight: bold;
+			}
+		}
+		&--figure{
+			img{
+				width: 100%;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		&--socialmedias {
+			background: white;
+			padding: 30px 0;
+		}
+	}
+	&--nextprev {
+		margin: 25px 0;
+		overflow: hidden;
+		&--element {
+			background: linear-gradient(
+		      rgba(30, 37, 56, 0.7), 
+		      rgba(30, 37, 56, 0.7)
+			  ),
+			  url("../../img/dev/blogpost-pic.jpg");
+			text-align: left;
+			padding: 15px 30px;
+			margin-bottom: 10px;
+			@include screen-medium {
+				width: 49%;
+				float: left;
+				margin-right: 2%;
+				margin-bottom: 0;
+			}
+			&:last-of-type {
+				margin-right: 0;
+			}
+			h4 {
+				@include font-size(20px);
+				color: white;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+				display: inline-block;
+				margin-top: 60px;
+				@include screen-medium {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
