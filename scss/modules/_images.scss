@@ -9,6 +9,10 @@ Image for the the Sagaframework
 .figure--extend{
 	width: 100%;
 	margin-bottom: 30px;
+	z-index: -10;
+	position: relative;
+	opacity: 0;
+	@extend .fadeInUp;
 	&--img{
 		width: 100%;
 		display: inline-block;
