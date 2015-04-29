@@ -632,10 +632,10 @@ _blog.scss
 Blog
 
 */
-.blog-content {
+.blogcontent {
   overflow: hidden;
   text-align: center; }
-  .blog-content--article {
+  .blogcontent--article {
     position: relative;
     background: white;
     text-align: left;
@@ -644,88 +644,97 @@ Blog
     font-size: 0.875rem;
     margin-bottom: 30px; }
     @media only screen and (min-width: 44em) {
-      .blog-content--article {
+      .blogcontent--article {
         float: left;
         margin-right: 2%;
         width: 49%; }
-        .blog-content--article:nth-child(2n+2) {
+        .blogcontent--article:nth-child(2n+2) {
           margin-right: 0;
           margin-top: 30px; } }
-    .blog-content--article--text {
+    .blogcontent--article--text {
       padding: 25px 15px; }
-    .blog-content--article--figure img {
+    .blogcontent--article--figure img {
       width: 100%;
       display: inline-block;
       vertical-align: top; }
-  .blog-content h4 {
+  .blogcontent h4 {
     font-size: 36px;
     font-size: 2.25rem;
     margin-bottom: 15px; }
+  .blogcontent--center {
+    clear: both; }
 
-.blogsingle-content {
+.blogsinglecontent {
   text-align: center; }
-  .blogsingle-content--article--text {
+  .blogsinglecontent--article--text {
     background: white;
     color: #5F6882;
     font-size: 14px;
     font-size: 0.875rem;
     padding: 25px 15px;
     margin: 25px 0; }
-    .blogsingle-content--article--text h4 {
+    .blogsinglecontent--article--text h4 {
       text-align: left;
       font-size: 36px;
       font-size: 2.25rem;
       margin-bottom: 15px; }
-    .blogsingle-content--article--text p {
+    .blogsinglecontent--article--text p {
       text-align: left;
       margin-bottom: 15px; }
-    .blogsingle-content--article--text a {
+    .blogsinglecontent--article--text a {
       text-decoration: none;
       color: #34E27E; }
       @media only screen and (min-width: 44em) {
-        .blogsingle-content--article--text a:hover {
+        .blogsinglecontent--article--text a:hover {
           text-decoration: underline; } }
-    .blogsingle-content--article--text img {
+    .blogsinglecontent--article--text img {
       max-width: 100%;
       padding: 25px 0; }
-    .blogsingle-content--article--text strong {
+    .blogsinglecontent--article--text strong {
       font-weight: bold; }
-  .blogsingle-content--article--figure img {
+  .blogsinglecontent--article--figure img {
     width: 100%;
     display: inline-block;
     vertical-align: top; }
-  .blogsingle-content--article--socialmedias {
+  .blogsinglecontent--article--socialmedias {
     background: white;
     padding: 30px 0; }
-  .blogsingle-content--nextprev {
+  .blogsinglecontent--nextprev {
     margin: 25px 0;
     overflow: hidden; }
-    .blogsingle-content--nextprev--element {
+    .blogsinglecontent--nextprev--element {
       background: linear-gradient(rgba(30, 37, 56, 0.7), rgba(30, 37, 56, 0.7)), url("../../img/dev/blogpost-pic.jpg");
       text-align: left;
       padding: 15px 30px;
       margin-bottom: 10px; }
       @media only screen and (min-width: 44em) {
-        .blogsingle-content--nextprev--element {
+        .blogsinglecontent--nextprev--element {
           width: 49%;
           float: left;
           margin-right: 2%;
           margin-bottom: 0; } }
-      .blogsingle-content--nextprev--element:last-of-type {
+      .blogsinglecontent--nextprev--element:last-of-type {
         margin-right: 0; }
-      .blogsingle-content--nextprev--element h4 {
+      .blogsinglecontent--nextprev--element h4 {
         font-size: 20px;
         font-size: 1.25rem;
         color: white; }
-      .blogsingle-content--nextprev--element a {
+      .blogsinglecontent--nextprev--element a {
         color: white;
         text-decoration: none;
         display: inline-block;
         margin-top: 60px; }
         @media only screen and (min-width: 44em) {
-          .blogsingle-content--nextprev--element a:hover {
+          .blogsinglecontent--nextprev--element a:hover {
             text-decoration: underline; } }
 
+/*
+
+20/04/2015 | J. Henrotte
+_careers.scss
+Careers
+
+*/
 /*
 
 28/04/2015 | J. Henrotte
@@ -972,3 +981,5 @@ Navigation
             font-size: 14px; }
             .navigation--list--element a:hover {
               color: #34E27E; } }
+
+/*# sourceMappingURL=application.css.map */

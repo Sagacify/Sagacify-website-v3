@@ -6,7 +6,7 @@ Blog
 
 */
 
-.blog-content {
+.blogcontent {
 	overflow: hidden;
 	text-align: center;
 	&--article {
@@ -41,9 +41,12 @@ Blog
 		@include font-size(36px);
 		margin-bottom: 15px;	
 	}
+	&--center{
+		clear: both;
+	}
 }
 
-.blogsingle-content {
+.blogsinglecontent {
 	text-align: center;
 	&--article {
 			&--text {
