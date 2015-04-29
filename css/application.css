@@ -380,6 +380,60 @@ Variables for the the Sagaframework
 body {
   background-color: #FAFAFA; }
 
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2015 Daniel Eden
+*/
+.animated, .fadeInUp, .figure--extend {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both; }
+
+.animated.infinite, .infinite.fadeInUp, .infinite.figure--extend {
+  animation-iteration-count: infinite; }
+
+.animated.hinge, .hinge.fadeInUp, .hinge.figure--extend {
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s; }
+
+.animated.bounceIn, .bounceIn.fadeInUp, .bounceIn.figure--extend,
+.animated.bounceOut,
+.bounceOut.fadeInUp,
+.bounceOut.figure--extend {
+  animation-duration: .75s; }
+
+.animated.flipOutX, .flipOutX.fadeInUp, .flipOutX.figure--extend,
+.animated.flipOutY,
+.flipOutY.fadeInUp,
+.flipOutY.figure--extend {
+  animation-duration: .75s; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    visibility: visible; } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    visibility: visible; } }
+.fadeInUp, .figure--extend {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards; }
+
 /*
 
 20/04/2015 | J. Henrotte
@@ -388,29 +442,6 @@ Dev mode for the open know project
 SHOULD REMOVE FOR PRODUCTION
 
 */
-body:after {
-  content: 'base';
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background: red;
-  color: #fff;
-  font-size: 1rem; }
-  @media screen and (min-width: 30em) {
-    body:after {
-      content: "small: 30em"; } }
-  @media screen and (min-width: 44em) {
-    body:after {
-      content: "med: 44em"; } }
-  @media screen and (min-width: 62em) {
-    body:after {
-      content: "large: 62em"; } }
-  @media screen and (min-width: 82em) {
-    body:after {
-      content: "xlarge: 82em"; } }
-
 /*
 
 27/04/2015 | J. Henrotte
@@ -420,7 +451,7 @@ Basic for modules for the Sagaframework
 */
 .wrapper {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1160px;
   padding: 0 10px;
   margin: 0 auto; }
 
@@ -433,7 +464,10 @@ Image for the the Sagaframework
 */
 .figure--extend {
   width: 100%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  z-index: -10;
+  position: relative;
+  opacity: 0; }
   .figure--extend--img {
     width: 100%;
     display: inline-block;
@@ -450,7 +484,9 @@ Blocks
   background-color: white;
   padding: 30px 30px 40px 30px;
   margin-bottom: 30px;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  visibility: hidden; }
   .blocks--element--title {
     font-size: 36px;
     font-size: 2.25rem;
@@ -697,6 +733,76 @@ _grid.scss
 Impossible grid
 
 */
+@media only screen and (min-width: 44em) {
+  .blocks {
+    position: relative; }
+    .blocks--element {
+      position: absolute; }
+    .blocks .data--right {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .blocks .data-indexif {
+      z-index: -1; }
+    .blocks [data-w="0.1"] {
+      width: 10%; }
+    .blocks [data-w="0.2"] {
+      width: 20%; }
+    .blocks [data-w="0.3"] {
+      width: 30%; }
+    .blocks [data-w="0.4"] {
+      width: 40%; }
+    .blocks [data-w="0.5"] {
+      width: 50%; }
+    .blocks [data-w="0.6"] {
+      width: 60%; }
+    .blocks [data-w="0.65"] {
+      width: 65%; }
+    .blocks [data-w="0.7"] {
+      width: 70%; }
+    .blocks [data-w="0.8"] {
+      width: 80%; }
+    .blocks [data-w="0.9"] {
+      width: 90%; }
+    .blocks [data-w="1"] {
+      width: 100%; }
+    .blocks [data-ml="-3"] {
+      left: -90px; }
+    .blocks [data-ml="-2"] {
+      left: -60px; }
+    .blocks [data-ml="-1"] {
+      left: -30px; }
+    .blocks [data-ml="1"] {
+      left: 30px; }
+    .blocks [data-ml="2"] {
+      left: 60px; }
+    .blocks [data-ml="3"] {
+      left: 90px; }
+    .blocks [data-ml="4"] {
+      left: 120px; }
+    .blocks [data-ml="5"] {
+      left: 150px; }
+    .blocks [data-ml="6"] {
+      left: 180px; }
+    .blocks [data-mr="-3"] {
+      right: -90px; }
+    .blocks [data-mr="-2"] {
+      right: -60px; }
+    .blocks [data-mr="-1"] {
+      right: -30px; }
+    .blocks [data-mr="1"] {
+      right: 30px; }
+    .blocks [data-mr="2"] {
+      right: 60px; }
+    .blocks [data-mr="3"] {
+      right: 90px; }
+    .blocks [data-mr="4"] {
+      right: 120px; }
+    .blocks [data-mr="5"] {
+      right: 150px; }
+    .blocks [data-mr="6"] {
+      right: 180px; } }
+
 /*
 
 20/04/2015 | J. Henrotte
@@ -709,8 +815,9 @@ Variables for the the Sagaframework
   @media only screen and (min-width: 44em) {
     .header {
       width: 100%;
-      max-width: 1140px;
+      max-width: 1160px;
       margin: 0 auto;
+      margin-bottom: 2rem;
       overflow: hidden; } }
   .header--navbutton {
     overflow: hidden; }
@@ -770,7 +877,7 @@ Variables for the the Sagaframework
       text-align: left; } }
   .footer--list {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1160px;
     margin: 0 auto; }
     .footer--list--element {
       padding-bottom: 25px; }
@@ -865,5 +972,3 @@ Navigation
             font-size: 14px; }
             .navigation--list--element a:hover {
               color: #34E27E; } }
-
-/*# sourceMappingURL=application.css.map */

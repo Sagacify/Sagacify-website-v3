@@ -12,6 +12,8 @@ Blocks
 		padding: 30px 30px 40px 30px;
 		margin-bottom: 30px;
 		position: relative;
+		opacity: 0;
+		visibility: hidden;
 		&--title{
 			@include font-size(36px);
 			margin-bottom: 10px;
