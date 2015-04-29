@@ -1726,7 +1726,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/main.min.js": {
 		"fileType": 64,
@@ -1763,7 +1763,7 @@
 		},
 	"\/js\/script\/grid.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/script\/grid.js",
 		"outputAbbreviatedPath": "\/js\/script\/min\/grid-min.js",
@@ -2463,6 +2463,12 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/bower_components\/wow\/dist\/wow.js",
 			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/script\/grid.js",
+			"position": 2,
 			"type": 0
 			}
 		]

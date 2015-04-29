@@ -625,10 +625,16 @@ Blocks
 .blocks--greenshadow {
   box-shadow: 2px 2px 0px 0px #34E27E; }
 .blocks--map {
-  padding: 0; }
-  .blocks--map iframe {
-    display: inline-block;
-    vertical-align: top; }
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 500px; }
+  .blocks--map #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
 
 /*
 
