@@ -22,7 +22,7 @@
 		},
 	"\/blog.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/blog.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -976,7 +976,7 @@
 		"syntaxCheckerStyle": 1
 		},
 	"\/bower_components\/smoothstate\/LICENSE.md": {
-		"enableFootnoteSupport": 0,
+		"enableFootnoteSupport": 1,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
@@ -988,7 +988,7 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/bower_components\/smoothstate\/README.md": {
-		"enableFootnoteSupport": 0,
+		"enableFootnoteSupport": 1,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
@@ -1060,7 +1060,7 @@
 		"syntaxCheckerStyle": 1
 		},
 	"\/bower_components\/wow\/README.md": {
-		"enableFootnoteSupport": 0,
+		"enableFootnoteSupport": 1,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
@@ -1171,6 +1171,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
+		},
+	"\/careers.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/careers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/config.rb": {
 		"fileType": 131072,
@@ -1615,17 +1624,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/js\/main.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/main.js",
-		"outputAbbreviatedPath": "\/js\/main.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
 	"\/js\/main.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1639,7 +1637,7 @@
 		},
 	"\/js\/min\/main-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/main-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/main-min-min.js",
@@ -1668,7 +1666,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/script\/min\/analytics-min.js": {
 		"fileType": 64,
@@ -1796,16 +1794,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/blog.kit",
-		"outputAbbreviatedPath": "\/blog.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
-		},
-	"\/kit\/careers.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit\/careers.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"outputAbbreviatedPath": "\/kit\/blog.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1882,7 +1871,7 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
-		"enableFootnoteSupport": 0,
+		"enableFootnoteSupport": 1,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
@@ -1894,8 +1883,8 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/scss\/_dev.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
+		"createSourceMap": 1,
+		"debugStyle": 1,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -1910,8 +1899,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/application.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
+		"createSourceMap": 1,
+		"debugStyle": 1,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
@@ -1974,8 +1963,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/base\/_button.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
+		"createSourceMap": 0,
+		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2102,8 +2091,8 @@
 		"useLibsass": 0
 		},
 	"\/scss\/base\/_vars.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
+		"createSourceMap": 1,
+		"debugStyle": 1,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -2316,26 +2305,6 @@
 	],
 "lastSavedByUser": "Julien Henrotte",
 "manualImportLinks": {
-	"\/js\/main.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/script\/analytics.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/wow\/dist\/wow.js",
-			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/script\/grid.js",
-			"position": 2,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
@@ -2344,7 +2313,7 @@
 	"iconImageName": "harddrive_yellow"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2943,7 +2912,7 @@
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
-	"markdownEnableFootnotes": 0,
+	"markdownEnableFootnotes": 1,
 	"markdownEnableSmartyPants": 1,
 	"markdownExpandTabs": 1,
 	"reloadFileURLs": 0,
@@ -2953,8 +2922,8 @@
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 1,
-	"sassDebugStyle": 1,
+	"sassCreateSourceMap": 0,
+	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
