@@ -12,12 +12,12 @@ Blocks
 		padding: 30px 30px 40px 30px;
 		margin-bottom: 30px;
 		position: relative;
-		opacity: 0;
-		visibility: hidden;
+		&.topIndex{
+			z-index: 10;
+		}
 		&--title{
 			@include font-size(36px);
 			margin-bottom: 10px;
-			text-transform: uppercase;
 		}
 		&--text{
 			@include font-size(15px);
@@ -107,25 +107,48 @@ Blocks
 			color: white;
 		}
 	}
+	&--social{
+		width: 250px;
+		padding: 0;
+		background-color: transparent;
+		&--icon{
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			&:before{
+				color: white;
+				font-size: 30px;
+				position: absolute;
+				top: 0;
+				line-height: 50px;
+				left: 50%;
+				@include translate(-50%,0);
+			}
+		}
+	}
+	&--githubalt,
+	&--twitter,
+	&--facebook,
+	&--linkedin{
+		display: inline-block;
+		position: relative;
+		float: left;
+		margin-left: calc(100% / 40 * 2);
+		width: 50px;
+		height: 50px;
+	}
 	&--githubalt {
 		background: black;
-		color: white;
-		font-size: 32px;
 	}
 	&--twitter {
 		background: $twitter-color;
-		color: white;
-		font-size: 30px;
 	}
 	&--facebook {
 		background: $facebook-color;
-		color: white;
-		font-size: 30px;
 	}
 	&--linkedin {
 		background: $linkedin-color;
-		color: white;
-		font-size: 30px;
 	}
 	&--blog{
 		.blocks--element--title{
@@ -160,12 +183,15 @@ Blocks
 		}
 	}
 	&--twitterfeed {
-		background: $base-color;
+		background: #34E27E;
+		background-image: -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+		background-image: -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+		background-image: linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
 		box-shadow: 2px 2px 0px 0px white;
-			&--text {
-				color: white;
-				@include font-size(22px);
-			}
+		&--text {
+			color: white;
+			@include font-size(22px);
+		}
 		a {
 			text-decoration: none;
 			color: white;
@@ -183,10 +209,10 @@ Blocks
 			padding-top: 100px;
 			color: white;
 			@include font-size(18px);
-				&--icon {
-					display: inline-block;
-					padding-right: 10px;
-				}
+			&--icon {
+				display: inline-block;
+				padding-right: 10px;
+			}
 		}
 	}
 	&--greenshadow {
@@ -194,9 +220,7 @@ Blocks
 	}
 	&--map{
 		padding: 0;
-		width: 100%;
-		max-width: 500px;
-		height: 500px;
+		height: 350px;
 		#map{
 			position:absolute; top:0; bottom:0;
 			width: 100%;

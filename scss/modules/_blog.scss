@@ -17,10 +17,8 @@ Blog
 		@include font-size(14px);
 		margin-bottom: 30px;
 		@include screen-medium {
-			
-			float:left;
-			margin-right: 2%;
-			width: 49%;
+			display: inline-block;
+			vertical-align: top;
 			&:nth-child(2n+2){
 				margin-right: 0;
 				margin-top: 30px;
@@ -36,20 +34,44 @@ Blog
 				vertical-align: top;
 			}
 		}
-	}
-	h4 {
-		@include font-size(36px);
-		margin-bottom: 15px;	
+		&--title {
+			@include font-size(36px);
+			margin-bottom: 15px;	
+		}
 	}
 	&--center{
 		clear: both;
+		text-align: center;
+	}
+	&[data-columns]::before {
+		display: none;
+		@include screen-medium {
+			content: '1 .column.size-1of1';
+		}
+		@include screen-large {
+			content: '2 .column.size-1of2';
+		}
+	}
+
+	.column { 
+		float: left;
+	}
+	.size-1of1 { 
+		width: 100%;
+	}
+	.size-1of2 { 
+		width: 49%; 
+		margin-right: 2%;
+		&:last-child{
+			margin-right: 0;
+		}
 	}
 }
 
 .blogsinglecontent {
 	text-align: center;
 	&--article {
-			&--text {
+		&--text {
 			background: white;
 			color: $text-color;
 			@include font-size(14px);
@@ -98,10 +120,10 @@ Blog
 		overflow: hidden;
 		&--element {
 			background: linear-gradient(
-		      rgba(30, 37, 56, 0.7), 
-		      rgba(30, 37, 56, 0.7)
-			  ),
-			  url("../../img/dev/blogpost-pic.jpg");
+				rgba(30, 37, 56, 0.7), 
+				rgba(30, 37, 56, 0.7)
+				),
+			url("../../img/dev/blogpost-pic.jpg");
 			text-align: left;
 			padding: 15px 30px;
 			margin-bottom: 10px;

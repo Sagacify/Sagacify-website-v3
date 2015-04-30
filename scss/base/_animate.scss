@@ -33,12 +33,12 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0px, 100%, 0px);
   }
 
   100% {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: none;
     visibility: visible;
   }
 }
@@ -46,21 +46,18 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0px, 100%, 0px);
   }
 
   100% {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: none;
     visibility: visible;
   }
 }
 
 .fadeInUp {
-	opacity: 0;
 	@extend .animated;
   	animation-name: fadeInUp;
   	-webkit-animation-name: fadeInUp;
-  	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
-    animation-fill-mode: forwards;
 }
