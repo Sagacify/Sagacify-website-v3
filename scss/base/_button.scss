@@ -28,3 +28,20 @@ Buttons
 	text-align: center;
 	margin-bottom: 115px;
 }
+
+.btn-apply {
+	@include translate(0, 50%);
+
+}
+
+.btn-view {
+	position: static;
+	display: inline-block;
+	margin: 0 0 30px 0;
+	@include screen-medium {
+		position: absolute;
+		margin: 0;
+		@include translate(0, -50%);
+		right: 2px;
+	}
+}

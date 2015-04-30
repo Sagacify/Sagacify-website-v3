@@ -12,8 +12,8 @@ Blocks
 		padding: 30px 30px 40px 30px;
 		margin-bottom: 30px;
 		position: relative;
-		opacity: 0;
-		visibility: hidden;
+		// opacity: 0;
+		// visibility: hidden;
 		&--title{
 			@include font-size(36px);
 			margin-bottom: 10px;
@@ -166,7 +166,7 @@ Blocks
 				color: white;
 				@include font-size(22px);
 			}
-		a {
+		&--link {
 			text-decoration: none;
 			color: white;
 			@include screen-medium {
@@ -201,6 +201,26 @@ Blocks
 			position:absolute; top:0; bottom:0;
 			width: 100%;
 			height: 100%;
+		}
+	}
+	&--description {
+		@include font-size(15px);
+		&--title {
+			@include font-size(36px);
+			text-transform: capitalize;
+		}
+		&--subtitle {
+			@include font-size(16px);
+			font-family: $base-family-regular;
+			color: $title-color-blue;
+			padding: 10px 0;
+		}
+	}
+	&--data {
+		background: $title-color-blue;
+			&--paragraph {
+			color: white;
+			@include font-size(16px);
 		}
 	}
 }

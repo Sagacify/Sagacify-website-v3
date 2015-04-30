@@ -74,7 +74,7 @@ Placeholders for the Sagaframework
 .blocks--blockquote:after {
   clear: both; }
 
-.navigation {
+.blogsinglecontent--nextprev--element:before, .onepositioncontent--positiongroup--element:before, .navigation {
   position: absolute;
   top: 0;
   left: 0;
@@ -335,6 +335,28 @@ Buttons
   text-align: center;
   margin-bottom: 115px; }
 
+.btn-apply {
+  -webkit-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  transform: translate(0, 50%); }
+
+.btn-view {
+  position: static;
+  display: inline-block;
+  margin: 0 0 30px 0; }
+  @media only screen and (min-width: 44em) {
+    .btn-view {
+      position: absolute;
+      margin: 0;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      right: 2px; } }
+
 /*
 
 24/02/2015 | J. Henrotte
@@ -455,6 +477,22 @@ Basic for modules for the Sagaframework
   padding: 0 10px;
   margin: 0 auto; }
 
+.keymessage {
+  font-size: 36px;
+  font-size: 2.25rem;
+  color: #1E2538;
+  text-align: center;
+  margin-bottom: 70px; }
+  .keymessage--tagline {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 1rem;
+    font-weight: 300; }
+
 /*
 
 27/04/2015 | J. Henrotte
@@ -484,9 +522,7 @@ Blocks
   background-color: white;
   padding: 30px 30px 40px 30px;
   margin-bottom: 30px;
-  position: relative;
-  opacity: 0;
-  visibility: hidden; }
+  position: relative; }
   .blocks--element--title {
     font-size: 36px;
     font-size: 2.25rem;
@@ -605,11 +641,11 @@ Blocks
     color: white;
     font-size: 22px;
     font-size: 1.375rem; }
-  .blocks--twitterfeed a {
+  .blocks--twitterfeed--link {
     text-decoration: none;
     color: white; }
     @media only screen and (min-width: 44em) {
-      .blocks--twitterfeed a:hover {
+      .blocks--twitterfeed--link:hover {
         text-decoration: underline; } }
   .blocks--twitterfeed--tags {
     color: white; }
@@ -635,6 +671,25 @@ Blocks
     bottom: 0;
     width: 100%;
     height: 100%; }
+.blocks--description {
+  font-size: 15px;
+  font-size: 0.9375rem; }
+  .blocks--description--title {
+    font-size: 36px;
+    font-size: 2.25rem;
+    text-transform: capitalize; }
+  .blocks--description--subtitle {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 400;
+    color: #54D1ED;
+    padding: 10px 0; }
+.blocks--data {
+  background: #54D1ED; }
+  .blocks--data--paragraph {
+    color: white;
+    font-size: 16px;
+    font-size: 1rem; }
 
 /*
 
@@ -714,30 +769,40 @@ Blog
     margin: 25px 0;
     overflow: hidden; }
     .blogsinglecontent--nextprev--element {
-      background: linear-gradient(rgba(30, 37, 56, 0.7), rgba(30, 37, 56, 0.7)), url("../../img/dev/blogpost-pic.jpg");
+      position: relative;
       text-align: left;
       padding: 15px 30px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      height: 155px;
+      display: block;
+      overflow: hidden; }
+      .blogsinglecontent--nextprev--element:before {
+        z-index: 2;
+        content: '';
+        background-color: rgba(56, 62, 78, 0.7); }
       @media only screen and (min-width: 44em) {
         .blogsinglecontent--nextprev--element {
           width: 49%;
           float: left;
           margin-right: 2%;
-          margin-bottom: 0; } }
-      .blogsinglecontent--nextprev--element:last-of-type {
-        margin-right: 0; }
-      .blogsinglecontent--nextprev--element h4 {
+          margin-bottom: 0; }
+          .blogsinglecontent--nextprev--element:last-of-type {
+            margin-right: 0; } }
+      .blogsinglecontent--nextprev--element--title {
         font-size: 20px;
         font-size: 1.25rem;
-        color: white; }
-      .blogsinglecontent--nextprev--element a {
         color: white;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 60px; }
-        @media only screen and (min-width: 44em) {
-          .blogsinglecontent--nextprev--element a:hover {
-            text-decoration: underline; } }
+        position: relative;
+        z-index: 10; }
+      .blogsinglecontent--nextprev--element--next, .blogsinglecontent--nextprev--element--previous {
+        color: white;
+        position: absolute;
+        bottom: 15px;
+        z-index: 10; }
+      .blogsinglecontent--nextprev--element--previous {
+        left: 30px; }
+      .blogsinglecontent--nextprev--element--next {
+        right: 30px; }
 
 /*
 
@@ -746,6 +811,103 @@ _careers.scss
 Careers
 
 */
+.careers {
+  font-size: 16px;
+  font-size: 1rem; }
+  .careers--positions {
+    background: white;
+    margin-bottom: 25px;
+    padding: 35px 30px; }
+    .careers--positions--title {
+      font-size: 36px;
+      font-size: 2.25rem;
+      color: #1E2538;
+      margin-bottom: 40px; }
+    .careers--positions--element {
+      margin-bottom: 30px; }
+      .careers--positions--element--group {
+        position: relative; }
+        .careers--positions--element--group--firsttitle {
+          text-transform: uppercase;
+          font-size: 14px;
+          font-size: 0.875rem;
+          margin-bottom: 10px; }
+        .careers--positions--element--group--secondtitle {
+          font-size: 24px;
+          font-size: 1.5rem; }
+  .careers--noposition {
+    background: white;
+    margin-bottom: 130px;
+    padding: 35px 30px; }
+    .careers--noposition--title {
+      font-size: 36px;
+      font-size: 2.25rem;
+      color: #1E2538;
+      margin-bottom: 25px; }
+    .careers--noposition--paragraph a {
+      text-decoration: none;
+      color: #34E27E; }
+      @media only screen and (min-width: 44em) {
+        .careers--noposition--paragraph a:hover {
+          text-decoration: underline; } }
+
+.onepositioncontent--article {
+  position: relative; }
+  .onepositioncontent--article--figure img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top; }
+  .onepositioncontent--article--text {
+    background: white;
+    color: #5F6882;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 25px 15px;
+    margin: 25px 0; }
+    .onepositioncontent--article--text--title {
+      font-size: 36px;
+      font-size: 2.25rem;
+      color: #1E2538;
+      margin-bottom: 40px; }
+    .onepositioncontent--article--text p {
+      margin-bottom: 15px; }
+.onepositioncontent--allpositions {
+  background: white;
+  padding: 25px 15px; }
+  .onepositioncontent--allpositions--title {
+    font-size: 24px;
+    font-size: 1.5rem; }
+.onepositioncontent--positiongroup {
+  margin: 25px 0;
+  overflow: hidden; }
+  .onepositioncontent--positiongroup--element {
+    position: relative;
+    text-align: left;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    height: 155px;
+    display: block;
+    overflow: hidden; }
+    .onepositioncontent--positiongroup--element:before {
+      z-index: 2;
+      content: '';
+      background-color: rgba(56, 62, 78, 0.7); }
+    @media only screen and (min-width: 44em) {
+      .onepositioncontent--positiongroup--element {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 0; }
+        .onepositioncontent--positiongroup--element:last-of-type {
+          margin-right: 0; } }
+    .onepositioncontent--positiongroup--element--title {
+      font-size: 20px;
+      font-size: 1.25rem;
+      color: white;
+      padding-bottom: 105px;
+      position: relative;
+      z-index: 10; }
+
 /*
 
 28/04/2015 | J. Henrotte
