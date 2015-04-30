@@ -2,3 +2,4 @@
 config.codekit
 *.DS_Store
 **/.DS_Store
+kit/*.html
