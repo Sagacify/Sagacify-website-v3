@@ -740,6 +740,20 @@ Blocks
     color: white;
     font-size: 14px;
     font-size: 0.875rem; }
+.blocks--teamsmall {
+  padding: 30px 10px;
+  text-align: center;
+  width: 100%; }
+  .blocks--teamsmall--text {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    line-height: 1.2; }
+  .blocks--teamsmall--img {
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: top; }
 
 /*
 
