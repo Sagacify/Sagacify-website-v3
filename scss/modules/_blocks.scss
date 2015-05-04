@@ -290,9 +290,26 @@ Blocks
 	}
 	&--teamgithub{
 		background-color: $base-color;
-		@include font-size(14px);
+		padding: 20px 10px;
 		&--text{
 			color: white;
+			@include font-size(14px);
+		}
+	}
+	&--teamsmall {
+		padding: 30px 10px;
+		text-align: center;
+		width: 100%;
+		&--text{
+			@include font-size(14px);
+			font-family: $title-family;
+			font-weight: bold;
+			line-height: 1.2;
+		}
+		&--img{
+			display: inline-block;
+			margin-bottom: 15px;
+			vertical-align: top;
 		}
 	}
 }
