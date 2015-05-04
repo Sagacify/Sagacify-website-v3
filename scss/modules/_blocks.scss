@@ -15,9 +15,17 @@ Blocks
 		&.topIndex{
 			z-index: 10;
 		}
-		&--title{
+		&.botIndex{
+			z-index: -1;
+		}
+		&--title,
+		&--subtitle{
 			@include font-size(36px);
 			margin-bottom: 10px;
+		}
+		&--subtitle{
+			@include font-size(24px);
+			margin: 10px 0 5px 0;
 		}
 		&--text{
 			@include font-size(15px);
@@ -25,6 +33,7 @@ Blocks
 	}
 	&--image{
 		padding: 0;
+		z-index: -1;
 		&--figure{
 			img{
 				width: 100%;

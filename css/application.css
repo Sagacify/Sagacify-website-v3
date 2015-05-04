@@ -435,7 +435,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0px, 100%, 0px); }
+    transform: translate3d(0px, 30%, 0px); }
   100% {
     opacity: 1;
     transform: none;
@@ -443,7 +443,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0px, 100%, 0px); }
+    transform: translate3d(0px, 30%, 0px); }
   100% {
     opacity: 1;
     transform: none;
@@ -521,15 +521,22 @@ Blocks
   position: relative; }
   .blocks--element.topIndex {
     z-index: 10; }
-  .blocks--element--title {
+  .blocks--element.botIndex {
+    z-index: -1; }
+  .blocks--element--title, .blocks--element--subtitle {
     font-size: 36px;
     font-size: 2.25rem;
     margin-bottom: 10px; }
+  .blocks--element--subtitle {
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0; }
   .blocks--element--text {
     font-size: 15px;
     font-size: 0.9375rem; }
 .blocks--image {
-  padding: 0; }
+  padding: 0;
+  z-index: -1; }
   .blocks--image--figure img {
     width: 100%;
     display: inline-block;
