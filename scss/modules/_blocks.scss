@@ -236,4 +236,55 @@ Blocks
 			height: 100%;
 		}
 	}
+	&--description {
+		&--title {
+			@include font-size(36px);
+		}
+		&--subtitle {
+			color: $title-color-blue;
+			@include font-size(16px);
+			padding: 10px 0;
+		}
+		&--paragraph {
+			@include font-size(15px);
+		}
+	}
+	&--teamtwitterfeed {
+		z-index: -1;
+		background: #34E27E;
+		background-image: -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+		background-image: -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+		background-image: linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
+		box-shadow: 2px 2px 0px 0px white;
+		&--text {
+			color: white;
+			@include font-size(16px);
+				a {
+				text-decoration: none;
+				color: white;
+				@include screen-medium {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		&--twitteraccount {
+			display: inline-block;
+			padding-top: 70px;
+			color: white;
+			@include font-size(14px);
+			&--icon {
+				display: inline-block;
+				padding-right: 10px;
+			}
+		}
+	}
+	&--teamgithub{
+		background-color: $base-color;
+		@include font-size(14px);
+		&--text{
+			color: white;
+		}
+	}
 }
