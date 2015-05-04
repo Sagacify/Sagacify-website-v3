@@ -728,10 +728,11 @@ Blocks
       padding-right: 10px; }
 .blocks--teamgithub {
   background-color: #34E27E;
-  font-size: 14px;
-  font-size: 0.875rem; }
+  padding: 20px 10px; }
   .blocks--teamgithub--text {
-    color: white; }
+    color: white;
+    font-size: 14px;
+    font-size: 0.875rem; }
 
 /*
 

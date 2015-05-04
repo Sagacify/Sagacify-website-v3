@@ -273,9 +273,10 @@ Blocks
 	}
 	&--teamgithub{
 		background-color: $base-color;
-		@include font-size(14px);
+		padding: 20px 10px;
 		&--text{
 			color: white;
+			@include font-size(14px);
 		}
 	}
 }
