@@ -457,7 +457,7 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0px, 30%, 0px); }
   100% {
     opacity: 1;
-    transform: none;
+    transform: translate3d(0px, 0px, 0px);
     visibility: visible; } }
 .fadeInUp, .figure--extend {
   animation-name: fadeInUp;
@@ -544,7 +544,13 @@ Blocks
     margin: 10px 0 5px 0; }
   .blocks--element--text {
     font-size: 15px;
-    font-size: 0.9375rem; }
+    font-size: 0.9375rem;
+    margin-top: 10px; }
+    .blocks--element--text:first-child {
+      margin-top: 0; }
+  .blocks--element .relativeImp {
+    position: relative;
+    height: auto; }
 .blocks--image {
   padding: 0;
   z-index: -1; }
@@ -765,6 +771,13 @@ Blocks
     display: inline-block;
     margin-bottom: 15px;
     vertical-align: top; }
+
+.blocksrelativeImp {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto; }
+  .blocksrelativeImp .blocks--element {
+    position: relative; }
 
 /*
 

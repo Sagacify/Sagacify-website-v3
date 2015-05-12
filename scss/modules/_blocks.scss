@@ -29,6 +29,14 @@ Blocks
 		}
 		&--text{
 			@include font-size(15px);
+			margin-top: 10px;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+		.relativeImp{
+			position: relative;
+			height: auto;
 		}
 	}
 	&--image{
@@ -259,7 +267,7 @@ Blocks
 		&--text {
 			color: white;
 			@include font-size(16px);
-				a {
+			a {
 				text-decoration: none;
 				color: white;
 				@include screen-medium {
@@ -303,5 +311,14 @@ Blocks
 			margin-bottom: 15px;
 			vertical-align: top;
 		}
+	}
+}
+
+.blocksrelativeImp{
+	position: relative;
+	max-width: 650px;
+	margin: 0 auto;
+	.blocks--element{
+		position: relative;
 	}
 }
