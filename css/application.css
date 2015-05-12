@@ -144,13 +144,6 @@ _fonts.scss
 Fonts for the projet Sagaframework
 
 */
-/*
-
-20/04/2015 | J. Henrotte
-_fontIcons.scss
-Fonticons for Sagaframework
-
-*/
 @font-face {
   font-family: "saga-font";
   src: url("../fonts/saga-font.eot");
@@ -225,6 +218,24 @@ Fonticons for Sagaframework
 
 .icon-heart:before {
   content: "o"; }
+
+.icon-pinterest:before {
+  content: "p"; }
+
+.icon-pinterest-rounded:before {
+  content: "q"; }
+
+.icon-pinterest-squared:before {
+  content: "r"; }
+
+.icon-twitter-squared:before {
+  content: "s"; }
+
+.icon-googleplus-squared:before {
+  content: "t"; }
+
+.icon-googleplus:before {
+  content: "u"; }
 
 /*
 
@@ -818,7 +829,7 @@ Blog
     color: #5F6882;
     font-size: 14px;
     font-size: 0.875rem;
-    padding: 25px 15px;
+    padding: 35px 25px;
     margin: 25px 0; }
     .blogsinglecontent--article--text h4 {
       text-align: left;
@@ -836,16 +847,48 @@ Blog
           text-decoration: underline; } }
     .blogsinglecontent--article--text img {
       max-width: 100%;
-      padding: 25px 0; }
+      padding: 25px 0;
+      display: inline-block;
+      vertical-align: top; }
     .blogsinglecontent--article--text strong {
       font-weight: bold; }
   .blogsinglecontent--article--figure img {
     width: 100%;
     display: inline-block;
     vertical-align: top; }
-  .blogsinglecontent--article--socialmedias {
+  .blogsinglecontent--article--social {
     background: white;
     padding: 30px 0; }
+    .blogsinglecontent--article--social--button {
+      font-size: 18px;
+      display: inline-block;
+      margin-right: 20px;
+      color: white; }
+      .blogsinglecontent--article--social--button:first-child {
+        background: #3C5A99; }
+        @media only screen and (min-width: 44em) {
+          .blogsinglecontent--article--social--button:first-child:hover {
+            background: #4e71ba; } }
+      .blogsinglecontent--article--social--button:nth-child(2) {
+        background: #64CCF1; }
+        @media only screen and (min-width: 44em) {
+          .blogsinglecontent--article--social--button:nth-child(2):hover {
+            background: #93dbf5; } }
+      .blogsinglecontent--article--social--button:nth-child(3) {
+        background: #cb2027; }
+        @media only screen and (min-width: 44em) {
+          .blogsinglecontent--article--social--button:nth-child(3):hover {
+            background: #e03e44; } }
+      .blogsinglecontent--article--social--button:last-child {
+        background: #dd4b39;
+        margin-right: 0; }
+        @media only screen and (min-width: 44em) {
+          .blogsinglecontent--article--social--button:last-child:hover {
+            background: #e47365; } }
+      .blogsinglecontent--article--social--button:before {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 4px 6px 6px 6px; }
   .blogsinglecontent--nextprev {
     margin: 25px 0;
     overflow: hidden; }
@@ -856,7 +899,11 @@ Blog
       margin-bottom: 10px;
       height: 155px;
       display: block;
-      overflow: hidden; }
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center; }
+      .blogsinglecontent--nextprev--element.right {
+        float: right; }
       .blogsinglecontent--nextprev--element:before {
         z-index: 2;
         content: '';
