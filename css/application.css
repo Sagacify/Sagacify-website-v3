@@ -415,6 +415,7 @@ body {
 
 .background {
   position: relative;
+  background-color: #31D476;
   background-image: url("/img/dev/illu-homepage.svg");
   background-image: url("/img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
   background-image: url("/img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
@@ -422,7 +423,7 @@ body {
   background-size: 815px, cover;
   background-repeat: no-repeat;
   background-position: center, center;
-  height: 1000px;
+  height: 1050px;
   margin-bottom: 100px; }
   .background .navigation.active {
     opacity: 1; }
@@ -450,6 +451,11 @@ body {
       font-size: 20px;
       font-size: 1.25rem;
       font-family: "Open Sans", sans-serif; }
+  .background .scrolldown {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    height: 47px; }
 
 /*!
 Animate.css - http://daneden.me/animate

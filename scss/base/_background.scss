@@ -13,6 +13,7 @@ body{
 
 .background {
 	position: relative;
+	background-color: #31D476;
 	background-image: url("/img/dev/illu-homepage.svg"); //fallback
 	background-image: url("/img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
 	background-image: url("/img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
@@ -20,7 +21,7 @@ body{
 	background-size: 815px, cover;
 	background-repeat: no-repeat;
 	background-position: center, center;
-	height: 1000px;
+	height: 1050px;
 	margin-bottom: 100px;
 		.navigation{
 			&.active{
@@ -59,5 +60,11 @@ body{
 					@include font-size(20px);
 					font-family: $base-family;
 				}
+		}
+		.scrolldown {
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			height: 47px;
 		}
 }
