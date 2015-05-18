@@ -421,6 +421,50 @@ Variables for the the Sagaframework
 body {
   background-color: #FAFAFA; }
 
+.background {
+  position: relative;
+  background-color: #31D476;
+  background-image: url("/img/dev/illu-homepage.svg");
+  background-image: url("/img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+  background-image: url("/img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+  background-image: url("/img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
+  background-size: 815px, cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  height: 1050px;
+  margin-bottom: 100px; }
+  .background .navigation.active {
+    opacity: 1; }
+  .background .navigation--list--element a {
+    color: white; }
+    .background .navigation--list--element a.selected {
+      color: #1E2538; }
+  @media only screen and (min-width: 44em) {
+    .background .navigation--list--element a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px; }
+      .background .navigation--list--element a:hover {
+        color: #1E2538; } }
+  .background .keymessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-size: 2.25rem;
+    color: #1E2538;
+    margin-bottom: 0; }
+    .background .keymessage--tagline {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-family: "Open Sans", sans-serif; }
+  .background .scrolldown {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    height: 47px; }
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
