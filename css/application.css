@@ -462,29 +462,31 @@ Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
-.animated, .fadeInUp, .figure--extend {
+.animated, .fadeInUp, .figure--extend, .fade {
   animation-duration: 1s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both; }
 
-.animated.infinite, .infinite.fadeInUp, .infinite.figure--extend {
+.animated.infinite, .infinite.fadeInUp, .infinite.figure--extend, .infinite.fade {
   animation-iteration-count: infinite; }
 
-.animated.hinge, .hinge.fadeInUp, .hinge.figure--extend {
+.animated.hinge, .hinge.fadeInUp, .hinge.figure--extend, .hinge.fade {
   animation-duration: 2s;
   -webkit-animation-duration: 2s; }
 
-.animated.bounceIn, .bounceIn.fadeInUp, .bounceIn.figure--extend,
+.animated.bounceIn, .bounceIn.fadeInUp, .bounceIn.figure--extend, .bounceIn.fade,
 .animated.bounceOut,
 .bounceOut.fadeInUp,
-.bounceOut.figure--extend {
+.bounceOut.figure--extend,
+.bounceOut.fade {
   animation-duration: .75s; }
 
-.animated.flipOutX, .flipOutX.fadeInUp, .flipOutX.figure--extend,
+.animated.flipOutX, .flipOutX.fadeInUp, .flipOutX.figure--extend, .flipOutX.fade,
 .animated.flipOutY,
 .flipOutY.fadeInUp,
-.flipOutY.figure--extend {
+.flipOutY.figure--extend,
+.flipOutY.fade {
   animation-duration: .75s; }
 
 @-webkit-keyframes fadeInUp {
@@ -506,6 +508,22 @@ Copyright (c) 2015 Daniel Eden
 .fadeInUp, .figure--extend {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp; }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    visibility: visible; } }
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    visibility: visible; } }
+.fade {
+  animation-name: fade;
+  -webkit-animation-name: fade; }
 
 /*
 

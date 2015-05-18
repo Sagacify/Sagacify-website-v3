@@ -4,64 +4,152 @@
 		"selected_items":
 		[
 			[
-				"min",
-				"min-width"
+				"wi",
+				"window"
+			],
+			[
+				"each",
+				"each	$.each()"
+			],
+			[
+				"inne",
+				"innerHeight	.innerHeight()"
+			],
+			[
+				"prev",
+				"preventDefault"
+			],
+			[
+				"open",
+				"openWindow"
 			],
 			[
 				"mar",
-				"margin-bottom"
-			],
-			[
-				"timi",
-				"timeline"
-			],
-			[
-				"font-",
-				"font-size"
-			],
-			[
-				"margin",
 				"margin"
 			],
 			[
-				"padd",
-				"padding"
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"scr",
+				"scrolltop"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"table",
+				"table-cell"
 			],
 			[
 				"pad",
 				"padding"
 			],
 			[
-				"max",
-				"max-height"
+				"offs",
+				"offsetHeight"
 			],
 			[
-				"border",
-				"border"
+				"data",
+				"dataset"
 			],
 			[
-				"text-",
-				"text-align"
+				"da",
+				"dataset"
 			],
 			[
-				"font-s",
-				"font-style"
+				"hei",
+				"heighetElementRight"
 			],
 			[
-				"marg",
-				"margin-top"
+				"block",
+				"blocks"
 			],
 			[
-				"li",
-				"line-height"
+				"he",
+				"heighetElement"
+			],
+			[
+				"cs",
+				"css	.css() - single"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"width",
+				"widthDocument"
+			],
+			[
+				"top",
+				"topElement"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"height",
+				"heightCount"
+			],
+			[
+				"heig",
+				"heighti"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font-",
+				"font-size"
 			],
 			[
 				"font",
 				"font-size"
 			],
 			[
-				"text",
-				"text-decoration"
+				"max",
+				"max-width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"timi",
+				"timeline"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"li",
+				"line-height"
 			],
 			[
 				"wid",
@@ -90,14 +178,6 @@
 			[
 				"pa",
 				"padding"
-			],
-			[
-				"he",
-				"height"
-			],
-			[
-				"hei",
-				"heightSVG"
 			],
 			[
 				"attr",
@@ -224,10 +304,6 @@
 				"attr	.attr() - single"
 			],
 			[
-				"wi",
-				"width	.width()"
-			],
-			[
 				"click",
 				"clickEventPosition"
 			],
@@ -254,10 +330,6 @@
 			[
 				"ani",
 				"animateBattery"
-			],
-			[
-				"css",
-				"css	.css() - single"
 			],
 			[
 				"z-",
@@ -324,10 +396,6 @@
 				"windowHeight"
 			],
 			[
-				"cs",
-				"css	.css() - multiple"
-			],
-			[
 				"pu",
 				"public--answer"
 			],
@@ -370,10 +438,6 @@
 			[
 				"q",
 				"quotesObject"
-			],
-			[
-				"fun",
-				"function"
 			],
 			[
 				"remove",
@@ -450,136 +514,64 @@
 			[
 				"wind",
 				"windowSize"
-			],
-			[
-				"dia",
-				"diagonaleCarre"
-			],
-			[
-				"ico",
-				"icon"
-			],
-			[
-				"icon",
-				"iconMap"
-			],
-			[
-				"tex-t",
-				"text-align"
-			],
-			[
-				"op",
-				"opacity"
-			],
-			[
-				"is",
-				"ismobile"
-			],
-			[
-				"our",
-				"ourclientTop"
-			],
-			[
-				"iin",
-				"inline-block"
-			],
-			[
-				"paddi",
-				"padding"
-			],
-			[
-				"borde-r",
-				"border-right"
-			],
-			[
-				"fon-",
-				"font-size"
-			],
-			[
-				"te",
-				"text-color-light"
-			],
-			[
-				"border-bo",
-				"border-bottom"
-			],
-			[
-				"backgru",
-				"background-color"
-			],
-			[
-				"fonts",
-				"font-style"
-			],
-			[
-				"border-col",
-				"border-color"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "scss/modules/_header.scss",
+			"file": "js/script/share.js",
 			"settings":
 			{
-				"buffer_size": 81,
+				"buffer_size": 1019,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scss/application.scss",
+			"file": "kit/index.kit",
 			"settings":
 			{
-				"buffer_size": 474,
+				"buffer_size": 9830,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scss/modules/_footer.scss",
+			"file": "kit/knowly.kit",
 			"settings":
 			{
-				"buffer_size": 81,
+				"buffer_size": 2496,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "kit/queryzest.kit",
 			"settings":
 			{
-				"buffer_size": 734,
+				"buffer_size": 2601,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/main.js",
+			"file": "kit/products.kit",
 			"settings":
 			{
-				"buffer_size": 36,
+				"buffer_size": 2458,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "kit/_meta.kit",
+			"file": "kit/team.kit",
 			"settings":
 			{
-				"buffer_size": 832,
+				"buffer_size": 19235,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scss/base/_vars.scss",
+			"file": "kit/about-us.kit",
 			"settings":
 			{
-				"buffer_size": 823,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/base/_base.scss",
-			"settings":
-			{
-				"buffer_size": 643,
+				"buffer_size": 7547,
 				"line_ending": "Unix"
 			}
 		}
@@ -650,32 +642,55 @@
 	],
 	"file_history":
 	[
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/application.scss",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/index.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/about-us.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_animate.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_blocks.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/team.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/application.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/knowly.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/careers.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/blog.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/queryzest.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/js/main.js",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/js/script/grid.js",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/js/script/parralax.js",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/index.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/.gitignore",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_blog.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/contact.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_javascript.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_images.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_grid.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_vars.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/_dev.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_button.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_footer.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_base.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_header.scss",
+		"/Users/JulienHe/Documents/Sagacify/Projects/i4-v2-node/public/development/app/resources/dev/ui/_button.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/css/application.css",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_navigation.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_base.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_typography.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_header.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_fonts.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_meta.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/modules/_footer.scss",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_navigation.kit",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/.htaccess",
+		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/README.md",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/solutions.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/services.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/products.kit",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/contact.kit",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/blog.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_background.scss",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_vars.scss",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/js/script/analytics.js",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_javascript.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_stylesheet.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_favicon.kit",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_fonts.scss",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_meta.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_viewport.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/index.html",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_footer.kit",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/kit/_header.kit",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_input.scss",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_button.scss",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_fontIcons.scss",
 		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_mixins.scss",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/base/_base.scss",
-		"/Users/JulienHe/Documents/Sagacify/Sagacify-website-v3/scss/_dev.scss",
 		"/Users/JulienHe/Documents/Sagacify/Projects/bw-node/public/bw-html/src/app/resources/scss/application.scss",
 		"/Users/JulienHe/Google Drive/Team design/Sagacify website/gitRepository/jquery.smoothState.js/sgweb/index.html",
 		"/Users/JulienHe/Documents/Sagacify/voo-youtube/src/js/analytics.js",
@@ -754,34 +769,11 @@
 		"/Users/JulienHe/Documents/Sagacify/Open Know/html/config.codekit",
 		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/base/_button.scss",
 		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/base/_fontIcons.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/img/assets/staff-choice.svg",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/base/_input.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/base/_fonts.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/modules/_footer.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/css/application.css",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/img/assets/twitter-white.svg",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/index.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/base/_base.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/login.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/forgot-password.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/register.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/img/assets/logo-white.svg",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/img/assets/logo.svg",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/application.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/base/_vars.scss",
-		"/Users/JulienHe/Documents/Sagacify/MobileXpense/mxp-xamarin/Android/Resources/Resource.designer.cs",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/modules/_modal.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/scss/modules/_articles.scss",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/users.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/publisher.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/resource-image.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/resource.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/search-develop.html",
-		"/Users/JulienHe/Documents/Sagacify/Open Know/html/modal-question.html"
+		"/Users/JulienHe/Documents/Sagacify/Open Know/html/img/assets/staff-choice.svg"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -811,6 +803,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data-wow",
+			"<span data-icon=\"c\" class=\"blocks--social--icon\"></span>",
+			"wow fadeInUp",
+			"head",
+			"wow fadeInUp",
+			"<h4",
+			"<h4>",
+			"h4",
+			"map",
+			"maps",
+			"data-re",
+			"reset",
+			"figure--extend",
+			"data-ri",
+			"data-prim",
+			"data-d=\"right\"",
+			"blocks--count",
+			"data-count",
+			"data-coun",
+			"}\n",
+			"direction",
+			"    \n",
+			"1E2538",
 			"animateBattery",
 			"data-dojo-attach-point=\"endDatesNode\"",
 			"modal--content--body--title",
@@ -915,30 +930,7 @@
 			"<label for=\"\" class=\"create__form--label\">Public</label>",
 			".loading",
 			"_videos",
-			"class=\"public--question--title\"",
-			"class=\"public--sharesocial--list--element\"",
-			"<em data-sgbind=\":slug\"></em>",
-			"class=\"sms--title\"",
-			"class=\"public--header--url\"",
-			"class=\"files--table--list--element--file\"",
-			"class=\"show--chat--list--element--text--time\"",
-			"Exige que",
-			"Link YouWa",
-			"Click or tap to select the are you wan",
-			"class=\"public--mcq-image--answer--list--element--number\"",
-			"class=\"public--mcq-image--answer--list--parent--full\"",
-			"&:hover",
-			"&:hover,&.selected",
-			"+32",
-			"class=\"public--mcq--answer--list--element--li",
-			"clickOnDelete",
-			"public--answer",
-			"note",
-			"ata-sgaction=\"change:choiceChange\">",
-			"placehol",
-			"answer",
-			"firs",
-			"placehol"
+			"class=\"public--question--title\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -971,136 +963,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scss/modules/_header.scss",
+					"file": "js/script/share.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 81,
+						"buffer_size": 1019,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								81,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "scss/application.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "scss/modules/_footer.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 81,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								36,
-								36
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 734,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								657,
-								657
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "js/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								32,
-								32
+								795,
+								795
 							]
 						],
 						"settings":
@@ -1111,57 +991,88 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "kit/_meta.kit",
+					"buffer": 1,
+					"file": "kit/index.kit",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 832,
+						"buffer_size": 9830,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								827,
-								827
+								7296,
+								7255
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CodeKit/CodeKit.tmLanguage"
+							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 421.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "kit/knowly.kit",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2228,
+								1963
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "scss/base/_vars.scss",
-					"semi_transient": false,
+					"buffer": 3,
+					"file": "kit/queryzest.kit",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 823,
+						"buffer_size": 2601,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								79,
-								0
+								1752,
+								1752
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1171,33 +1082,90 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "scss/base/_base.scss",
+					"buffer": 4,
+					"file": "kit/products.kit",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 643,
+						"buffer_size": 2458,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								386,
-								386
+								824,
+								824
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "kit/team.kit",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1704,
+								1704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 159.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "kit/about-us.kit",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7547,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3078,
+								3078
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 318.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1252,15 +1220,167 @@
 		"selected_items":
 		[
 			[
+				"about",
+				"kit/about-us.kit"
+			],
+			[
+				"team",
+				"kit/team.kit"
+			],
+			[
+				"product",
+				"kit/products.kit"
+			],
+			[
+				"know",
+				"kit/knowly.kit"
+			],
+			[
+				"para",
+				"js/script/parralax.js"
+			],
+			[
+				"index",
+				"kit/index.kit"
+			],
+			[
+				"main",
+				"js/main.js"
+			],
+			[
+				"te",
+				"kit/team.kit"
+			],
+			[
+				"carre",
+				"kit/careers.kit"
+			],
+			[
+				"block",
+				"scss/modules/_blocks.scss"
+			],
+			[
+				"conta",
+				"kit/contact.kit"
+			],
+			[
+				"anima",
+				"scss/base/_animate.scss"
+			],
+			[
+				"bloc",
+				"scss/modules/_blocks.scss"
+			],
+			[
 				"appli",
 				"scss/application.scss"
+			],
+			[
+				"idnex",
+				"kit/index.kit"
+			],
+			[
+				"ani",
+				"scss/base/_animate.scss"
+			],
+			[
+				"blocks",
+				"scss/modules/_blocks.scss"
+			],
+			[
+				"blog",
+				"kit/blog.kit"
+			],
+			[
+				"contact",
+				"kit/contact.kit"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"gird",
+				"js/script/grid.js"
+			],
+			[
+				"anim",
+				"scss/base/_animate.scss"
+			],
+			[
+				"cont",
+				"kit/contact.kit"
+			],
+			[
+				"contac",
+				"kit/contact.kit"
+			],
+			[
+				"blog.scs",
+				"scss/modules/_blog.scss"
+			],
+			[
+				"blog.s",
+				"scss/modules/_blog.scss"
+			],
+			[
+				"ma",
+				"js/main.js"
+			],
+			[
+				"butt",
+				"scss/base/_button.scss"
+			],
+			[
+				"foot",
+				"kit/_footer.kit"
+			],
+			[
+				"footer",
+				"kit/_footer.kit"
+			],
+			[
+				"jav",
+				"kit/_javascript.kit"
+			],
+			[
+				"imag",
+				"scss/modules/_images.scss"
+			],
+			[
+				"dev",
+				"scss/_dev.scss"
+			],
+			[
+				"vars",
+				"scss/base/_vars.scss"
+			],
+			[
+				"header",
+				"scss/modules/_header.scss"
+			],
+			[
+				"ja",
+				"kit/_javascript.kit"
+			],
+			[
+				"navig",
+				"scss/modules/_navigation.scss"
 			],
 			[
 				"base",
 				"scss/base/_base.scss"
 			],
 			[
-				"vars",
+				"typo",
+				"scss/base/_typography.scss"
+			],
+			[
+				"dev.",
+				"scss/_dev.scss"
+			],
+			[
+				"var",
 				"scss/base/_vars.scss"
 			],
 			[
@@ -1340,10 +1460,6 @@
 				"scss/base/_mixins.scss"
 			],
 			[
-				"typo",
-				"scss/base/_typography.scss"
-			],
-			[
 				"button",
 				"scss/base/_button.scss"
 			],
@@ -1358,10 +1474,6 @@
 			[
 				"article",
 				"scss/modules/_articles.scss"
-			],
-			[
-				"var",
-				"scss/base/_vars.scss"
 			],
 			[
 				"appl",
@@ -1422,10 +1534,6 @@
 			[
 				"base.",
 				"scss/lib/_base.scss"
-			],
-			[
-				"index",
-				"index.html"
 			],
 			[
 				"layout",
@@ -1490,10 +1598,6 @@
 			[
 				"landing",
 				"landing/css/landing.css"
-			],
-			[
-				"header",
-				"src/scss/modules/_header.scss"
 			],
 			[
 				"pla",
@@ -1626,142 +1730,6 @@
 			[
 				"transl",
 				"resources/locales/translation-nl.json"
-			],
-			[
-				"trans",
-				"resources/locales/translation-fr.json"
-			],
-			[
-				"tran",
-				"resources/locales/translation-en.json"
-			],
-			[
-				"sharefile.scs",
-				"scss/module/public/_sharefile.scss"
-			],
-			[
-				"choiceim",
-				"app/Widgets/Questions/Details/View/Shared/subviews/MCQ/ChoiceImageMCQItemView.html"
-			],
-			[
-				"answ",
-				"scss/module/public/_answer.scss"
-			],
-			[
-				"mcq-",
-				"scss/module/public/_mcq-image.scss"
-			],
-			[
-				"varia",
-				"scss/lib/_variable.scss"
-			],
-			[
-				"chat",
-				"scss/module/_chat.scss"
-			],
-			[
-				"chart",
-				"scss/module/_chart.scss"
-			],
-			[
-				"question.sc",
-				"scss/module/_question.scss"
-			],
-			[
-				"tooltipster.scss",
-				"scss/vendors/_tooltipster.scss"
-			],
-			[
-				"chart.s",
-				"scss/module/_chart.scss"
-			],
-			[
-				"guessn",
-				"app/Widgets/Questions/Details/View/Shared/subviews/GuessNumberQuestionView/GuessNumberQuestionView.html"
-			],
-			[
-				"showonim",
-				"app/Widgets/Questions/Details/Edition/subviews/ShowOnImageQuestionEdition.js"
-			],
-			[
-				"showon",
-				"app/Widgets/Questions/Details/Edition/subviews/ShowOnImageQuestionEdition.html"
-			],
-			[
-				"popu",
-				"scss/module/public/_popup.scss"
-			],
-			[
-				"drag",
-				"scss/lib/_dragdrop.scss"
-			],
-			[
-				"file.scss",
-				"scss/module/_files.scss"
-			],
-			[
-				"_public.scss",
-				"scss/module/public/_public.scss"
-			],
-			[
-				"auth",
-				"scss/module/_auth.scss"
-			],
-			[
-				"event",
-				"scss/module/_events.scss"
-			],
-			[
-				"foot",
-				"scss/module/_footer.scss"
-			],
-			[
-				"appse",
-				"scss/module/_appsection.scss"
-			],
-			[
-				"mcq",
-				"scss/module/public/_mcq-image.scss"
-			],
-			[
-				"related",
-				"resources/dev/modules/_related--resources.scss"
-			],
-			[
-				"stepby",
-				"widgets/application/StepByStep.js"
-			],
-			[
-				"relatedrecourceitemview.htm",
-				"widgets/detailed/SubWidgets/ViewSubWidget/RelatedRecourceItemView.html"
-			],
-			[
-				"flow.scs",
-				"resources/dev/modules/_flow.scss"
-			],
-			[
-				"flow",
-				"resources/.sass-cache/b70a9a508bd50f295791489bdc7e1955774233b9/_flow.scssc"
-			],
-			[
-				"variab",
-				"resources/dev/_variables.scss"
-			],
-			[
-				"applicat",
-				"css/application.css"
-			],
-			[
-				"mixi",
-				"scss/lib/_mixins.scss"
-			],
-			[
-				"anim",
-				"landing/css/animate.css"
-			],
-			[
-				"events.s",
-				"scss/module/_events.scss"
 			]
 		],
 		"width": 0.0
