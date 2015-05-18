@@ -20,9 +20,10 @@ body{
 	background-image: url("/img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
 	background-size: 815px, cover;
 	background-repeat: no-repeat;
-	background-position: center, center;
-	margin-top: -50px;
-	height: 1050px;
+	background-position: center center;
+	margin-top: -115px;
+	z-index: -1;
+	min-height: 100vh;
 	margin-bottom: 100px;
 		.navigation{
 			&.active{
