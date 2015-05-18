@@ -61,3 +61,31 @@ Copyright (c) 2015 Daniel Eden
   	animation-name: fadeInUp;
   	-webkit-animation-name: fadeInUp;
 }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade {
+  @extend .animated;
+    animation-name: fade;
+    -webkit-animation-name: fade;
+}
