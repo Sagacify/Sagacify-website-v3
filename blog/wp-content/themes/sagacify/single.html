@@ -1,0 +1,43 @@
+<?php get_header(); ?>
+
+<section class="blosingle">
+	<div class="wrapper">
+		<div class="blogsinglecontent">
+
+			<?php if (have_posts()) : ?>
+				<?php while (have_posts()) : the_post(); 
+
+				$prev = get_permalink(get_adjacent_post(false,'',false));
+				$next = get_permalink(get_adjacent_post(false,'',true)); ?>
+				?>
+				<article class="blosinglecontent--article">
+					<figure class="blogsinglecontent--article--figure">
+						<?php the_post_thumbnail(); ?>
+					</figure>
+					<div class="blogsinglecontent--article--text">
+						<h4><?php the_title(); ?></h4>
+						<?php the_content(); ?>
+					</div>
+					<div class="blogsinglecontent--article--socialmedias">
+						Plugin wp> social medias
+					</div>
+				</article>
+			<?php endwhile; ?>
+		<?php else : ?>
+		<?php endif; ?>
+
+		<div class="blogsinglecontent--nextprev">
+			<a href="<?php echo $prev; ?>" class="blogsinglecontent--nextprev--element" style="background-image:url('img/dev/blogpost-pic.jpg');">
+				<h4 class="blogsinglecontent--nextprev--element--title"><?php previous_post_link('%link'); ?></h4>
+				<p class="blogsinglecontent--nextprev--element--previous">Previous blogpost</p>
+			</a>
+			<a href="<?php echo $next; ?>" class="blogsinglecontent--nextprev--element" style="background-image:url('img/dev/blogpost-pic.jpg');">
+				<h4 class="blogsinglecontent--nextprev--element--title"><?php next_post_link('%link'); ?></h4>
+				<p class="blogsinglecontent--nextprev--element--next">Next blogpost</p>
+			</a>
+		</div>
+	</div>
+</div>
+</section>
+
+<?php get_footer(); ?>

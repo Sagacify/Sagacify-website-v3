@@ -789,6 +789,8 @@ Blocks
     display: inline-block;
     margin-bottom: 15px;
     vertical-align: top; }
+.blocks--iconbig {
+  background: none; }
 
 .blocksrelativeImp {
   position: relative;
