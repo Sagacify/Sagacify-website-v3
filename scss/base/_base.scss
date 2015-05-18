@@ -40,3 +40,14 @@ strong{
 a{
   text-decoration: none;
 }
+
+#smooth{
+  transition : opacity .5s;
+  opacity: 0;
+  &.is-coming{
+    opacity: 1;
+  }
+  &.is-exiting{
+    opacity: 0;
+  }
+}

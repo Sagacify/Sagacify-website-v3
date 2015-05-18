@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	
-	// Navigation toggle
+	/* ----------------- NAVIGATION TOGGLE ----------------- */
 	var elements = document.querySelector('.header--navbutton--rdicon');
 	var navigation = document.querySelector('.navigation');
 	elements.addEventListener("click", function(event){
@@ -32,27 +32,36 @@ $(document).ready(function () {
 		}
 	});
 
-	var $body    = $('html, body'),
-	content  = $('#smooth').smoothState({
+	/* ----------------- SMOOTHSTATE ----------------- */
+	var content   = $('#smooth').smoothState({
 		prefetch: true,
 		pageCacheSize: 4,
 		onStart: {
-			duration: 250,
+			duration: 500,
 			render: function (url, $container) {
 				content.toggleAnimationClass('is-exiting');
-				$body.animate({
-					scrollTop: 0
-				});
 			}
+		},
+		onEnd: {
+			duration: 100,
+			render: function(url, $container, $content){
+				document.body.scrollTop = 0;
+				$container.html($content);
+			}
+		},
+		callback : function(url, $container, $content) {
+			matrix();
+			content.toggleAnimationClass('is-coming');
 		}
 	}).data('smoothState');
 });
 
 window.onload=function(){
-	if(window.outerWidth > 704 &&  document.querySelectorAll('.blocks').length > 0){
-		matrix();
-	}
 
+	/* ---------------- INIT THE GRID ---------------- */
+	matrix();
+
+	/* ---------------- INIT WOW.JS ---------------- */	
 	var wow = new WOW({
 		boxClass:     'blocks--element',     
 		animateClass: 'fadeInUp',
@@ -63,14 +72,4 @@ window.onload=function(){
 		}
 	});
 	wow.init();
-
-	if( document.getElementById('map')) {
-    	// Provide your access token
-    	L.mapbox.accessToken = 'pk.eyJ1Ijoic2FnYWNpZnkiLCJhIjoiSEhlc0Y3OCJ9.oK-VhYtBUvM3zoVMJXekxg';
-    	// Create a map in the div #map
-    	var map = L.mapbox.map('map', 'sagacify.7274f0f9').setView([50.826609, 4.399905999999987], 16);	
-		map.touchZoom.disable();
-		map.doubleClickZoom.disable();
-		map.scrollWheelZoom.disable();
-    }
 };

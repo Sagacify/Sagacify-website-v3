@@ -313,6 +313,14 @@ strong {
 a {
   text-decoration: none; }
 
+#smooth {
+  transition: opacity .5s;
+  opacity: 0; }
+  #smooth.is-coming {
+    opacity: 1; }
+  #smooth.is-exiting {
+    opacity: 0; }
+
 /*
 
 27/04/2015 | J. Henrotte
