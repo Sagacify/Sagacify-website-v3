@@ -14,59 +14,34 @@ body{
 .background {
 	position: relative;
 	background-color: #31D476;
-	background-image: url("/img/dev/illu-homepage.svg"); //fallback
-	background-image: url("/img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
-	background-image: url("/img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
-	background-image: url("/img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
-	background-size: 815px, cover;
+	background-image: url("../img/dev/illu-homepage.svg"); //fallback
+	background-image: url("../img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+	background-image: url("../img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+	background-image: url("../img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
+	background-size: 870px, cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin-top: -115px;
 	z-index: -1;
 	min-height: 100vh;
 	margin-bottom: 100px;
-		.navigation{
-			&.active{
-				opacity: 1;
-			}
-			&--list{
-				&--element{
-					a{
-						color: white;
-						&.selected{
-							color: $title-color;
-						}
-					}
-					@include screen-medium {
-						a{
-							color: white;
-							text-decoration: none;
-							font-size: 14px;
-							&:hover{
-								color: $title-color;
-							}
-						}
-					}
-				}
-			}
+	.keymessage {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		@include font-size(36px);
+		color: $title-color;
+		margin-bottom: 0;
+		&--tagline {
+			@include font-size(20px);
+			font-family: $base-family;
 		}
-		.keymessage {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate( -50%, -50% );
-			@include font-size(36px);
-			color: $title-color;
-			margin-bottom: 0;
-				&--tagline {
-					@include font-size(20px);
-					font-family: $base-family;
-				}
-		}
-		.scrolldown {
-			position: absolute;
-			bottom: 30px;
-			left: 50%;
-			height: 47px;
-		}
+	}
+	&--scrolldown{
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		height: 47px;
+	}
 }

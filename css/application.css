@@ -424,30 +424,17 @@ body {
 .background {
   position: relative;
   background-color: #31D476;
-  background-image: url("/img/dev/illu-homepage.svg");
-  background-image: url("/img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
-  background-image: url("/img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
-  background-image: url("/img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
-  background-size: 815px, cover;
+  background-image: url("../img/dev/illu-homepage.svg");
+  background-image: url("../img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+  background-image: url("../img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+  background-image: url("../img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
+  background-size: 870px, cover;
   background-repeat: no-repeat;
   background-position: center center;
   margin-top: -115px;
   z-index: -1;
   min-height: 100vh;
   margin-bottom: 100px; }
-  .background .navigation.active {
-    opacity: 1; }
-  .background .navigation--list--element a {
-    color: white; }
-    .background .navigation--list--element a.selected {
-      color: #1E2538; }
-  @media only screen and (min-width: 44em) {
-    .background .navigation--list--element a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px; }
-      .background .navigation--list--element a:hover {
-        color: #1E2538; } }
   .background .keymessage {
     position: absolute;
     top: 50%;
@@ -461,10 +448,10 @@ body {
       font-size: 20px;
       font-size: 1.25rem;
       font-family: "Open Sans", sans-serif; }
-  .background .scrolldown {
+  .background--scrolldown {
     position: absolute;
-    bottom: 30px;
-    left: 50%;
+    bottom: 20px;
+    right: 20px;
     height: 47px; }
 
 /*!
@@ -480,24 +467,6 @@ Copyright (c) 2015 Daniel Eden
 
 .animated.infinite, .infinite.fadeInUp, .infinite.figure--extend, .infinite.fade {
   animation-iteration-count: infinite; }
-
-.animated.hinge, .hinge.fadeInUp, .hinge.figure--extend, .hinge.fade {
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s; }
-
-.animated.bounceIn, .bounceIn.fadeInUp, .bounceIn.figure--extend, .bounceIn.fade,
-.animated.bounceOut,
-.bounceOut.fadeInUp,
-.bounceOut.figure--extend,
-.bounceOut.fade {
-  animation-duration: .75s; }
-
-.animated.flipOutX, .flipOutX.fadeInUp, .flipOutX.figure--extend, .flipOutX.fade,
-.animated.flipOutY,
-.flipOutY.fadeInUp,
-.flipOutY.figure--extend,
-.flipOutY.fade {
-  animation-duration: .75s; }
 
 @-webkit-keyframes fadeInUp {
   0% {
@@ -597,35 +566,37 @@ _blocks.scss
 Blocks
 
 */
-.blocks--element {
+.blocks--element, .blocks--imageUp {
   background-color: white;
   padding: 30px 30px 40px 30px;
   margin-bottom: 30px;
   position: relative; }
-  .blocks--element.topIndex {
+  .blocks--element.topIndex, .blocks--imageUp.topIndex {
     z-index: 10; }
-  .blocks--element.botIndex {
+  .blocks--element.botIndex, .blocks--imageUp.botIndex {
     z-index: -1; }
-  .blocks--element--title, .blocks--element--subtitle {
+  .blocks--element--title, .blocks--element--subtitle, .blocks--imageUp--title, .blocks--imageUp--subtitle {
     font-size: 36px;
     font-size: 2.25rem;
     margin-bottom: 10px; }
-  .blocks--element--subtitle {
+  .blocks--element--subtitle, .blocks--imageUp--subtitle {
     font-size: 24px;
     font-size: 1.5rem;
     margin: 10px 0 5px 0; }
-  .blocks--element--text {
+  .blocks--element--text, .blocks--imageUp--text {
     font-size: 15px;
     font-size: 0.9375rem;
     margin-top: 10px; }
-    .blocks--element--text:first-child {
+    .blocks--element--text:first-child, .blocks--imageUp--text:first-child {
       margin-top: 0; }
-  .blocks--element .relativeImp {
+  .blocks--element .relativeImp, .blocks--imageUp .relativeImp {
     position: relative;
     height: auto; }
 .blocks--image {
   padding: 0;
-  z-index: -1; }
+  z-index: 0; }
+  .blocks--image a {
+    display: inline-block; }
   .blocks--image--figure img {
     width: 100%;
     display: inline-block;
@@ -1268,7 +1239,9 @@ Variables for the the Sagaframework
   font-size: 12px;
   font-size: 0.75rem;
   text-align: center;
-  color: #9B9B9B; }
+  color: #9B9B9B;
+  position: relative;
+  z-index: 20; }
   @media only screen and (min-width: 44em) {
     .footer {
       text-align: left; } }
@@ -1369,5 +1342,16 @@ Navigation
             font-size: 14px; }
             .navigation--list--element a:hover {
               color: #34E27E; } }
+  .navigation.home .navigation--list--element a {
+    color: white; }
+    .navigation.home .navigation--list--element a.selected {
+      color: #1E2538; }
+  @media only screen and (min-width: 44em) {
+    .navigation.home .navigation--list--element a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px; }
+      .navigation.home .navigation--list--element a:hover {
+        color: #1E2538; } }
 
 /*# sourceMappingURL=application.css.map */

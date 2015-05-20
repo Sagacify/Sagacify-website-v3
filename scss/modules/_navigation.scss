@@ -65,4 +65,26 @@ Navigation
 			}
 		}
 	}
+	&.home{
+		.navigation--list{
+			&--element{
+				a{
+					color: white;
+					&.selected{
+						color: $title-color;
+					}
+				}
+				@include screen-medium {
+					a{
+						color: white;
+						text-decoration: none;
+						font-size: 14px;
+						&:hover{
+							color: $title-color;
+						}
+					}
+				}
+			}
+		}
+	}
 }

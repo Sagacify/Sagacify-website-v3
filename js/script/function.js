@@ -10,3 +10,25 @@ function showMap(){
     	map.scrollWheelZoom.disable();
     }
 }
+
+/* ---------------- INIT HEADER ---------------- */
+
+function pathName(){
+	argument = document.location.pathname;
+	if(argument == '/' || argument == '/index'){
+		$('.navigation').addClass('home');
+	}else{
+		$('.navigation').removeClass('home');
+	}
+}
+
+
+/* ---------------- GET INSTAGRAM ---------------- */
+function getInstagram(){
+	$('.data-instagram').each(function(index, el) {
+		var me = $(this);
+		$.get('php/feed.php', function(data) {
+			me.html( data );
+		});
+	});
+}
