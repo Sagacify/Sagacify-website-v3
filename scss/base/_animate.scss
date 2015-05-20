@@ -15,21 +15,6 @@ Copyright (c) 2015 Daniel Eden
   animation-iteration-count: infinite;
 }
 
-.animated.hinge {
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-}
-
-.animated.bounceIn,
-.animated.bounceOut {
-  animation-duration: .75s;
-}
-
-.animated.flipOutX,
-.animated.flipOutY {
-  animation-duration: .75s;
-}
-
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;

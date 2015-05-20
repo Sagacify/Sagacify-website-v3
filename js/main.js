@@ -50,7 +50,9 @@ $(document).ready(function () {
 			}
 		},
 		callback : function(url, $container, $content) {
+			getInstagram();
 			matrix();
+			pathName();
 			content.toggleAnimationClass('is-coming');
 		}
 	}).data('smoothState');
@@ -60,6 +62,8 @@ window.onload=function(){
 
 	/* ---------------- INIT THE GRID ---------------- */
 	matrix();
+	pathName();
+	getInstagram();
 
 	/* ---------------- INIT WOW.JS ---------------- */	
 	var wow = new WOW({
@@ -72,4 +76,15 @@ window.onload=function(){
 		}
 	});
 	wow.init();
+
+	var waw = new WOW({
+		boxClass:     'blocks--image',     
+		animateClass: 'fade',
+		offset:       0,         
+		mobile:       true,      
+		live:         true,      
+		callback:     function(box) {
+		}
+	});
+	waw.init();
 };

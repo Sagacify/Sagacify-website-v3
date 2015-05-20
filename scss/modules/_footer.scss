@@ -12,6 +12,8 @@ Variables for the the Sagaframework
 	@include font-size(12px);
 	text-align: center;
 	color: $grey-color;
+	position: relative;
+	z-index: 20;
 	@include screen-medium {
 		text-align: left;
 	}

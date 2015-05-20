@@ -15,14 +15,12 @@ body{
 
 .background {
 	position: relative;
-	// $svg-gradient-shim-threshold: 1 !global;
-	// @include background-image(linear-gradient(120deg, #31D476 0%, #54D1ED 150%));
-	// background-color: #31D476;
-	background-image: url("/img/dev/illu-homepage.svg"); //fallback
-	background-image: url("/img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
-	background-image: url("/img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
-	background-image: url("/img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
-	background-size: 815px, cover;
+	background-color: #31D476;
+	background-image: url("../img/dev/illu-homepage.svg"); //fallback
+	background-image: url("../img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+	background-image: url("../img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
+	background-image: url("../img/dev/illu-homepage.svg"), linear-gradient(to bottom right, #31D476 0%, #54D1ED 150%);
+	background-size: 870px, cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin-top: -115px;
@@ -95,6 +93,13 @@ body{
 			-o-animation: scroll 1.5s -1s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
 		}
 	}
+	&--scrolldown{
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		height: 47px;
+	}
+}
 
 	@keyframes scroll {
 		0%, 20% {
@@ -123,4 +128,3 @@ body{
 			opacity: 0.01;
 		}
 	}
-}
