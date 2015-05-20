@@ -314,6 +314,10 @@ Blocks
 	}
 	&--iconbig {
 		background: none;
+		&--smaller {
+			margin: 0 auto;
+				max-width: 300px;
+			}
 	}
 }
 

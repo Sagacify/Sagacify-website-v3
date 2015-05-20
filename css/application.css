@@ -423,7 +423,6 @@ body {
 
 .background {
   position: relative;
-  background-color: #31D476;
   background-image: url("/img/dev/illu-homepage.svg");
   background-image: url("/img/dev/illu-homepage.svg"), -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
   background-image: url("/img/dev/illu-homepage.svg"), -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
@@ -461,12 +460,50 @@ body {
       font-size: 20px;
       font-size: 1.25rem;
       font-family: "Open Sans", sans-serif; }
-  .background .scrolldown {
+  .background--scrolldown {
+    border: 2px solid #1E2538;
+    border-radius: 26px;
     position: absolute;
-    bottom: 30px;
-    left: 50%;
-    height: 47px; }
-
+    bottom: 20px;
+    right: 20px;
+    width: 26px;
+    height: 42px;
+    -webkit-backface-visibility: hidden;
+    transform: translate(-50%, -50%); }
+    .background--scrolldown:after {
+      background-color: #1E2538;
+      border-radius: 100%;
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      margin-left: -2px;
+      width: 4px;
+      height: 4px;
+      opacity: 1;
+      transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+      -webkit-animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      -moz-animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      -ms-animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      -o-animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
+@keyframes scroll {
+  0%, 20% {
+    transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px); }
+  10% {
+    transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+    opacity: 1; }
+  100% {
+    transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+    opacity: 0.01; } }
+@-webkit-keyframes scroll {
+  0%, 20% {
+    transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px); }
+  10% {
+    transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+    opacity: 1; }
+  100% {
+    transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+    opacity: 0.01; } }
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -845,6 +882,9 @@ Blocks
     vertical-align: top; }
 .blocks--iconbig {
   background: none; }
+  .blocks--iconbig--smaller {
+    margin: 0 auto;
+    max-width: 300px; }
 
 .blocksrelativeImp {
   position: relative;
