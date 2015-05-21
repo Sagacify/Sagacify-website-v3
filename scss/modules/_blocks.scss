@@ -262,7 +262,6 @@ Blocks
 		}
 	}
 	&--teamtwitterfeed {
-		z-index: -1;
 		background: #34E27E;
 		background-image: -webkit-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
 		background-image: -o-linear-gradient(top left, #31D476 0%, #54D1ED 150%);
@@ -272,7 +271,7 @@ Blocks
 			color: white;
 			@include font-size(16px);
 			a {
-				text-decoration: none;
+				text-decoration: underline;
 				color: white;
 				@include screen-medium {
 					&:hover {
@@ -288,7 +287,11 @@ Blocks
 			@include font-size(14px);
 			&--icon {
 				display: inline-block;
-				padding-right: 10px;
+				padding-right: 5px;
+			}
+			a{
+				color: white;
+				text-decoration: underline;
 			}
 		}
 	}
