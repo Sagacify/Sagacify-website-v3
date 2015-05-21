@@ -60,6 +60,11 @@ body{
 		@include font-size(36px);
 		color: $title-color;
 		margin-bottom: 0;
+		h2 {
+			img {
+				max-width: 170px;
+			}
+		}
 		&--tagline {
 			@include font-size(20px);
 			font-family: $base-family;
