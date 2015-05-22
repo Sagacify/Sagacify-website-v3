@@ -32,3 +32,15 @@ function getInstagram(){
 		});
 	});
 }
+
+/* ---------------- INIT TEMP ---------------- */
+function temperature(){
+	var temperature = document.querySelector('.blocks--weather--temp');
+	if(temperature){
+		$.get('http://api.openweathermap.org/data/2.5/weather?zip=1040,be&units=metric', function(data) {
+			var temp = data.main.temp;
+			temp = temp.toFixed(1);
+			temperature.innerHTML = temp + '°';
+		});
+	}
+}

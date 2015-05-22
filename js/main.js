@@ -1,6 +1,11 @@
-var timeOut;
-$(document).ready(function () {
-	
+var checkOp = 0;
+window.onload=function(){
+
+	if (checkOp === 0) {
+		$('#smooth').addClass('is-coming');
+		checkOp = 1;
+	};
+
 	/* ----------------- NAVIGATION TOGGLE ----------------- */
 	var elements = document.querySelector('.header--navbutton--rdicon');
 	var navigation = document.querySelector('.navigation');
@@ -40,11 +45,12 @@ $(document).ready(function () {
 		onStart: {
 			duration: 700,
 			render: function (url, $container) {
-				content.toggleAnimationClass('is-exiting');
+				$('#smooth').removeClass('is-coming');
+				$('.loading').addClass('visible');
 			}
 		},
 		onEnd: {
-			duration: 50,
+			duration: 500,
 			render: function(url, $container, $content){
 				document.body.scrollTop = 0;
 				$container.html($content);
@@ -54,12 +60,11 @@ $(document).ready(function () {
 			getInstagram();
 			matrix();
 			pathName();
-			timeOut =  window.setTimeout( function() { content.toggleAnimationClass('is-coming'); }, 800);
+			temperature();
+			$(".loading").removeClass('visible');
+			$('#smooth').addClass('is-coming');
 		}
 	}).data('smoothState');
-});
-
-window.onload=function(){
 
 	/* ---------------- INIT THE GRID ---------------- */
 	matrix();
@@ -89,7 +94,7 @@ window.onload=function(){
 	});
 	waw.init();
 
-	var waw = new WOW({
+	var wuw = new WOW({
 		boxClass:     'blocks--iconbig',     
 		animateClass: 'fade',
 		offset:       0,         
@@ -98,5 +103,6 @@ window.onload=function(){
 		callback:     function(box) {
 		}
 	});
-	waw.init();
+	wuw.init();
+
 };

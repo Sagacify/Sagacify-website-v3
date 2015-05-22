@@ -70,8 +70,11 @@ Navigation
 			&--element{
 				a{
 					color: white;
-					&.selected{
+					text-shadow: 0px 1px rgba(#000, .45);
+					&.selected,
+					&:hover{
 						color: $title-color;
+						text-shadow: none;
 					}
 				}
 				@include screen-medium {

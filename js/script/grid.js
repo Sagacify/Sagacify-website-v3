@@ -2,7 +2,6 @@ var collumns = 40;
 var widthDocument = document.querySelector(".header").offsetWidth;
 var gutterSize = widthDocument / collumns;
 var percent = 100 / collumns;
-var checkOp = 0;
 
 function getHeight(argument) {
 	var heightCount = 0,
@@ -54,10 +53,4 @@ function matrix(){
 	}
 	/* ---------------- INIT THE MAP ---------------- */	
 	showMap();
-	console.log(checkOp);
-	if (checkOp == 0) {
-		$('#smooth').addClass('is-coming');
-		checkOp = 1;
-	};
-	console.log(checkOp);
 }

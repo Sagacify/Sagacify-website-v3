@@ -19,3 +19,24 @@ Image for the the Sagaframework
 		vertical-align: top;
 	}
 }
+
+.loading{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	@include translate(-50%, -50%);
+	z-index: 100;
+	width: 100%;
+	max-width: 300px;
+	visibility:hidden;
+	opacity:0;
+	transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+	&.visible{
+		visibility:visible;
+		opacity:1;
+		transition-delay:0s;
+	}
+	img{
+		width: 100%;
+	}
+}
