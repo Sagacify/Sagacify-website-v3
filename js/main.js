@@ -1,3 +1,4 @@
+var timeOut;
 $(document).ready(function () {
 	
 	/* ----------------- NAVIGATION TOGGLE ----------------- */
@@ -37,13 +38,13 @@ $(document).ready(function () {
 		prefetch: true,
 		pageCacheSize: 4,
 		onStart: {
-			duration: 500,
+			duration: 700,
 			render: function (url, $container) {
 				content.toggleAnimationClass('is-exiting');
 			}
 		},
 		onEnd: {
-			duration: 100,
+			duration: 50,
 			render: function(url, $container, $content){
 				document.body.scrollTop = 0;
 				$container.html($content);
@@ -53,7 +54,7 @@ $(document).ready(function () {
 			getInstagram();
 			matrix();
 			pathName();
-			content.toggleAnimationClass('is-coming');
+			timeOut =  window.setTimeout( function() { content.toggleAnimationClass('is-coming'); }, 800);
 		}
 	}).data('smoothState');
 });
@@ -79,6 +80,17 @@ window.onload=function(){
 
 	var waw = new WOW({
 		boxClass:     'blocks--image',     
+		animateClass: 'fade',
+		offset:       0,         
+		mobile:       true,      
+		live:         true,      
+		callback:     function(box) {
+		}
+	});
+	waw.init();
+
+	var waw = new WOW({
+		boxClass:     'blocks--iconbig',     
 		animateClass: 'fade',
 		offset:       0,         
 		mobile:       true,      

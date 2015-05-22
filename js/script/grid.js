@@ -54,8 +54,10 @@ function matrix(){
 	}
 	/* ---------------- INIT THE MAP ---------------- */	
 	showMap();
-
+	console.log(checkOp);
 	if (checkOp == 0) {
 		$('#smooth').addClass('is-coming');
+		checkOp = 1;
 	};
+	console.log(checkOp);
 }

@@ -70,7 +70,10 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fade {
-  @extend .animated;
     animation-name: fade;
     -webkit-animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
 }
