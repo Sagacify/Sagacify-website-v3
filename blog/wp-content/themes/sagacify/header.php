@@ -19,9 +19,7 @@
 } else {
     echo wp_title( ' | ', false, right ); bloginfo( 'name' );
 } ?></title>
-	
-	<!-- Google meta tag -->
-<meta name="description" content="">
+
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
@@ -73,7 +71,7 @@
 	<div class="header--navbutton clearfix">
 		<h1 class="header--navbutton--logo">
 			<a href="index" title="Sagacify website">
-				<img src="<?php bloginfo('template_directory');?>/img/base/logo.svg" alt="Sagacify's logo" class="header--logo--thelogo">
+				<img src="<?php bloginfo('template_directory');?>/img/base/Logo.svg" alt="Sagacify's logo" class="header--logo--thelogo">
 			</a>
 		</h1>
 		<a href="#" class="header--navbutton--rdicon">
@@ -85,22 +83,16 @@
 	<nav class="navigation">
 	<ul class="navigation--list">
 		<li class="navigation--list--element">
-			<a href="/index" title="Welcome to Sagacify website">home</a>
-		</li>
+			<a href="index" title="Welcome to Sagacify website">home</a>		</li>
 		<li class="navigation--list--element">
-			<a href="/about-us" title="About Sagacify">about us</a>
-		</li>
+			<a href="about-us" title="About Sagacify">about us</a>		</li>
 		<li class="navigation--list--element">
-			<a href="/solutions" title="Solutions of Sagacify">solutions</a>
-		</li>
+			<a href="solutions" title="Solutions of Sagacify">solutions</a>		</li>
 		<li class="navigation--list--element">
-			<a href="/blog" class="selected" title="Our blog">blog</a>
-		</li>
+			<a href="/blog" class="selected" title="Our blog">blog</a>		</li>
 		<li class="navigation--list--element">
-			<a href="/products" title="products Sagacify">products</a>
-		</li>
+			<a href="products" title="products Sagacify">products</a>		</li>
 		<li class="navigation--list--element">
-			<a href="/contact" title="Contact Sagacify">contact</a>
-		</li>
+			<a href="contact" title="Contact Sagacify">contact</a>		</li>
 	</ul>
 </nav></header>

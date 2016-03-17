@@ -28,9 +28,6 @@
 
 
 			</div>
-			<div class="blogcontent--center">
-				<a href="#" class="btn btn-moreposts">View more posts</a>
-			</div>
 		</section>
 
 <?php get_footer(); ?>

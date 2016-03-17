@@ -45,6 +45,7 @@ Blocks
 		z-index: 0;
 		a{
 			display: inline-block;
+			width: 100%;
 		}
 		&--figure{
 			img{
@@ -321,10 +322,18 @@ Blocks
 	}
 	&--iconbig {
 		background: none;
+		&--device{
+			max-width: 300px;
+			margin: 1rem auto;
+			@include screen-medium {
+				max-width: 100%;
+				margin: 0;
+			}
+		}
 		&--smaller {
 			margin: 0 auto;
-				max-width: 300px;
-			}
+			max-width: 300px;
+		}
 	}
 }
 

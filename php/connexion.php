@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "instafeed";
+$servername = "sagacifyblog.mysql.db";
+$username = "sagacifyblog";
+$password = "Clive2012";
+$dbname = "sagacifyblog";
 
 ?>

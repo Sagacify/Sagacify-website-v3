@@ -139,3 +139,12 @@ Mixins for the Sagaframework
 		transform        : translate($x, $y);
 	}
 }
+
+// generic transform
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
