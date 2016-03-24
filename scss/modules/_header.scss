@@ -25,13 +25,13 @@ Variables for the the Sagaframework
 			float: left;
 		}
 		&--rdicon {
-			background-color: $black-color;
+			background-color: $base-color;
 			height: 40px;
 			position: fixed;
 			right: 20px;
 			top: 20px;
 			width: 40px;
-			z-index: 2000;
+			z-index: 20;
 			@include screen-medium {
 				display: none;
 			}
@@ -54,16 +54,24 @@ Variables for the the Sagaframework
 			&.active {
 				span{
 					&:first-child {
-						@include transform( rotate(45deg) translate(8px, 7px) )
+						transform: rotate(45deg) translate(8px, 7px);
 					}
 					&:nth-child(2) {
 						opacity: 0;
 					}
 					&:last-child {
-						@include transform( rotate(-45deg) translate(6px, -7px) );
+						transform: rotate(-45deg) translate(6px, -7px);
 					}
 				}
 			}
 		}
 	}
+}
+
+.header.fixedTop{
+position: fixed;
+background-color: $background-color;
+left:0;
+right:0;
+z-index:3000;
 }

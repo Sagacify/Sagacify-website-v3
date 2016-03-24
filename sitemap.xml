@@ -18,11 +18,7 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://sagacify.com/technology</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://sagacify.com/people</loc>
+  <loc>http://sagacify.com/expertise</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
@@ -38,27 +34,15 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://sagacify.com/services</loc>
+  <loc>http://sagacify.com/saga-ask</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://sagacify.com/queryzest</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://sagacify.com/knowly</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://sagacify.com/team</loc>
+  <loc>http://sagacify.com/sagaknow</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://sagacify.com/careers</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://sagacify.com/fullstack</loc>
   <changefreq>weekly</changefreq>
 </url>
 </urlset>

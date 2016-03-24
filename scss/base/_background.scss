@@ -25,11 +25,8 @@ body{
 	background-position: center center;
 	margin-top: -115px;
 	z-index: -1;
-	min-height: 100vh;
-	margin-bottom: 40px;
-	@include screen-medium {
-		margin-bottom: 100px;
-	}
+	min-height: 93vh;
+	margin-bottom: 100px;
 	.navigation{
 		&.active{
 			opacity: 1;
@@ -59,7 +56,7 @@ body{
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		@include translate( -50%, -50% );
+		transform: translate( -50%, -50% );
 		@include font-size(36px);
 		color: $title-color;
 		margin-bottom: 0;
@@ -102,41 +99,37 @@ body{
 		}
 	}
 	&--scrolldown{
-		display: none;
 		position: absolute;
 		bottom: 20px;
 		right: 20px;
 		height: 47px;
-		@include screen-medium {
-			display: inline-block;
+	}
+}
+
+	@keyframes scroll {
+		0%, 20% {
+			transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+		}
+		10% {
+			transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+			opacity: 1;
+		}
+		100% {
+			transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+			opacity: 0.01;
 		}
 	}
-}
 
-@keyframes scroll {
-	0%, 20% {
-		transform: translate3d(0px,0px,0px) scaleX(1);
+	@-webkit-keyframes scroll {
+		0%, 20% {
+			transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+		}
+		10% {
+			transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+			opacity: 1;
+		}
+		100% {
+			transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+			opacity: 0.01;
+		}
 	}
-	10% {
-		transform: translate3d(0px,0px,0px)  scale(1.2);
-		opacity: 1;
-	}
-	100% {
-		transform: translate3d(0, 20px, 0) scale(2.5, 0.5);
-		opacity: 0.01;
-	}
-}
-
-@-webkit-keyframes scroll {
-	0%, 20% {
-		-webkit-transform: translate3d(0px,0px,0px) scaleX(1);
-	}
-	10% {
-		-webkit-transform: translate3d(0px,0px,0px)  scale(1.2);
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: translate3d(0, 20px, 0) scale(2.5, 0.5);
-		opacity: 0.01;
-	}
-}

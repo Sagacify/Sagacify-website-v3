@@ -8,26 +8,18 @@ Navigation
 
 .navigation{
 	transition: opacity 0.1s ease-in;
-	visibility:hidden;
-	opacity:0;
-	transition:visibility 0s linear 0.5s,opacity 0.5s linear;
-	-webkit-transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+	opacity: 0;
 	@extend %full--size;
 	position: fixed;
 	background: rgba($black-color, .9);
-	z-index: 100;
+	z-index: 10;
 	&.active{
-		visibility:visible;
-		opacity:1;
-		transition-delay:0s;
-		-webkit-transition-delay:0s;
+		opacity: 1;
 	}
 	@include screen-medium {
 		position: relative;
 		background: none;
-		visibility:visible;
-		opacity:1;
-		transition-delay:0s;
+		opacity: 1;
 		display: block;
 		float: right;
 		padding: 20px 0 0 0;
@@ -74,26 +66,24 @@ Navigation
 		}
 	}
 	&.home{
-		@include screen-medium {
-			.navigation--list{
-				&--element{
+		.navigation--list{
+			&--element{
+				a{
+					color: white;
+					text-shadow: 0px 1px rgba(#000, .45);
+					&.selected,
+					&:hover{
+						color: $title-color;
+						text-shadow: none;
+					}
+				}
+				@include screen-medium {
 					a{
 						color: white;
-						text-shadow: 0px 1px rgba(#000, .45);
-						&.selected,
+						text-decoration: none;
+						font-size: 14px;
 						&:hover{
 							color: $title-color;
-							text-shadow: none;
-						}
-					}
-					@include screen-medium {
-						a{
-							color: white;
-							text-decoration: none;
-							font-size: 14px;
-							&:hover{
-								color: $title-color;
-							}
 						}
 					}
 				}

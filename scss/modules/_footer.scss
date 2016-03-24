@@ -14,8 +14,9 @@ Variables for the the Sagaframework
 	color: $grey-color;
 	position: relative;
 	z-index: 20;
+	margin-top:100px;
 	@include screen-medium {
-		text-align: left;
+		text-align: center;
 	}
 	&--list {
 		width: 100%;
